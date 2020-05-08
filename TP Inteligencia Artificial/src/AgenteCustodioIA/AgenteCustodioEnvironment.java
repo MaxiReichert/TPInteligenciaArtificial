@@ -5,8 +5,9 @@ import frsf.cidisi.faia.environment.Environment;
 
 public class AgenteCustodioEnvironment extends Environment {
 
-	public void AgenteCustidioEnvironment() {
+	public AgenteCustodioEnvironment() {
 		this.environmentState= new AgenteCustodioEnvironmentState();
+		System.out.println("ole");
 	}
 	
 	@Override

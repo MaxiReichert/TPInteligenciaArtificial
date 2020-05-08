@@ -11,14 +11,20 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 public class AgenteCustodioState extends SearchBasedAgentState {
 
 	private int posicion;
-	private List<Ciudadano> ciudadanosFugados;
-	private int costoCamino;
-	private List<Integer> recorrido;
+	private ArrayList<Ciudadano> ciudadanosFugados;
+	private Double costoCamino;
+	private ArrayList<Integer> recorrido;
 	private HashMap<Integer, Collection<Integer>> mapaConocido;
 	//agregar sensores
+	
+	public AgenteCustodioState() {
+		this.initState();
+	}
+	
 	@Override
 	public void initState() {
 		posicion=0;
+		costoCamino=0.0;
 		
 		Integer[][] posiciones= new Integer [][] {
 			{1,17},
@@ -64,6 +70,9 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		
 		recorrido=new ArrayList<Integer>();
 		
+		ciudadanosFugados=new ArrayList<Ciudadano>();
+		Ciudadano fugado1= new Ciudadano(16,10);
+		ciudadanosFugados.add(fugado1);
 	}
 	
 	@Override
@@ -73,9 +82,24 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 	}
 	
 	@Override
+	public AgenteCustodioState clone() {
+		AgenteCustodioState nuevoEstado= new AgenteCustodioState();
+		nuevoEstado.setPosicion(posicion);
+		ArrayList<Ciudadano> ciudadanoFugados= (ArrayList<Ciudadano>) ciudadanosFugados.clone();
+		nuevoEstado.setCiudadanosFugados(ciudadanoFugados);
+		nuevoEstado.setCostoCamino(costoCamino);
+		ArrayList<Integer> camino= (ArrayList<Integer>) recorrido.clone();
+		return nuevoEstado;
+	}
+	
+	
+
+	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return false;
+		if(!(obj instanceof AgenteCustodioState)) {
+			return false;
+		}
+		 return (posicion==((AgenteCustodioState)obj).getPosicion() && ciudadanosFugados.size()==((AgenteCustodioState)obj).getCiudadanosFugados().size());
 	}
 
 
@@ -87,11 +111,6 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		return null;
 	}
 
-	@Override
-	public SearchBasedAgentState clone() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 	public int getPosicion() {
 		return posicion;
@@ -101,25 +120,34 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		this.posicion = posicion;
 	}
 
-	public List<Ciudadano> getCiudadanosFugados() {
+	public ArrayList<Ciudadano> getCiudadanosFugados() {
 		return ciudadanosFugados;
 	}
 
-	public void setCiudadanosFugados(List<Ciudadano> ciudadanosFugados) {
+	public void setCiudadanosFugados(ArrayList<Ciudadano> ciudadanosFugados) {
 		this.ciudadanosFugados = ciudadanosFugados;
 	}
 
-	public int getCostoCamino() {
+	public Double getCostoCamino() {
 		return costoCamino;
+	}
+	
+	public void setCostoCamino(Double costoCamino) {
+		this.costoCamino=costoCamino;
+		
 	}
 
 
-	public List<Integer> getRecorrido() {
+	public ArrayList<Integer> getRecorrido() {
 		return recorrido;
 	}
 
 	public Collection<Integer> getSucesores() {
 		return mapaConocido.get(posicion);
+	}
+	
+	public HashMap<Integer, Collection<Integer>> getMapaConocido(){
+		return this.mapaConocido;
 	}
 
 	

@@ -31,9 +31,9 @@ public class Main extends Application {
 		lbMetodoBusqueda.setFont(Font.font("Arial", 12));
 		
 		ComboBox<String> metodosBusqueda= new ComboBox();
+		metodosBusqueda.getItems().add("Costo Uniforme");
 		metodosBusqueda.getItems().add("Profundidad");
-		metodosBusqueda.getItems().add("Horizontal");
-		metodosBusqueda.getItems().add("Avara");
+		metodosBusqueda.getItems().add("Amplitud");
 		
 		hb1.getChildren().add(lbMetodoBusqueda);
 		hb1.getChildren().add(metodosBusqueda);

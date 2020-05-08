@@ -46,6 +46,9 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 	
 	};
 	
+	public AgenteCustodioEnvironmentState () {
+		this.initState();
+	}
 	
 	@Override
 	public Object clone() {
@@ -66,6 +69,12 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 		}
 		
 		ciudadanosInfectados= new ArrayList<Ciudadano>();
+		Ciudadano ciudadano1= new Ciudadano(15,15);
+		Ciudadano ciudadano2= new Ciudadano(10,10);
+		Ciudadano ciudadano3= new Ciudadano(5,5);
+		ciudadanosInfectados.add(ciudadano1);
+		ciudadanosInfectados.add(ciudadano2);
+		ciudadanosInfectados.add(ciudadano3);
 		
 	}
 
