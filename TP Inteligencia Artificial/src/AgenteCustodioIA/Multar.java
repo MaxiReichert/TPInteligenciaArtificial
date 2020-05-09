@@ -8,7 +8,8 @@ import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
 public class Multar extends SearchAction {
-
+	
+	private int idCiudadanoEliminado;
 	@Override
 	public SearchBasedAgentState execute(SearchBasedAgentState s) {
 		AgenteCustodioState agentState= (AgenteCustodioState) s;
@@ -18,6 +19,7 @@ public class Multar extends SearchAction {
 		if(!ciudadanosFugados.isEmpty()) {
 			for(int i=0; i<ciudadanosFugados.size(); i++) {
 				if(agentState.getPosicion()==ciudadanosFugados.get(i).getPosicionActual()) {
+					idCiudadanoEliminado=ciudadanosFugados.get(i).getId();
 					ciudadanosFugados.remove(i);
 					agentState.setCiudadanosFugados(ciudadanosFugados);
 				}
@@ -37,8 +39,19 @@ public class Multar extends SearchAction {
 
 	@Override
 	public EnvironmentState execute(AgentState ast, EnvironmentState est) {
-	this.execute((SearchBasedAgentState) ast);
-	
+		this.execute((SearchBasedAgentState) ast);
+			/*AgenteCustodioEnvironmentState estadoAmbiente= (AgenteCustodioEnvironmentState) est;
+			
+			ArrayList<Ciudadano> ciudadanosInfectados= estadoAmbiente.getCiudadanosInfectados();
+			for(int i=0; i<ciudadanosInfectados.size(); i++) {
+				if(idCiudadanoEliminado==ciudadanosInfectados.get(i).getId()) {
+					int posicionActual=ciudadanosInfectados.get(i).getPosicionResidencia();
+					ciudadanosInfectados.get(i).setPosicionActual(posicionActual);
+					estadoAmbiente.setCiudadanosInfectados(ciudadanosInfectados);
+				}
+			} 
+			return estadoAmbiente;*/
+		
 	
 		return null;
 	}

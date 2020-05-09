@@ -11,7 +11,9 @@ import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgent;
 import frsf.cidisi.faia.solver.search.BreathFirstSearch;
 import frsf.cidisi.faia.solver.search.DepthFirstSearch;
+import frsf.cidisi.faia.solver.search.IStepCostFunction;
 import frsf.cidisi.faia.solver.search.Search;
+import frsf.cidisi.faia.solver.search.UniformCostSearch;
 
 public class AgenteCustodio extends SearchBasedAgent {
 
@@ -40,7 +42,7 @@ public class AgenteCustodio extends SearchBasedAgent {
 	
 	@Override
 	public void see(Perception p) {
-		// TODO Auto-generated method stub
+		this.getAgentState().updateState(p);
 		
 	}
 
@@ -49,6 +51,12 @@ public class AgenteCustodio extends SearchBasedAgent {
 		
 		switch(this.estrategia) {
 			case "Costo Uniforme":
+				IStepCostFunction costo= new FuncionCosto();
+				UniformCostSearch uniformCostSearch= new UniformCostSearch(costo);
+				
+				Search uniformCostSearchSolver= new Search(uniformCostSearch);
+				uniformCostSearchSolver.setVisibleTree(Search.EFAIA_TREE);
+				this.setSolver(uniformCostSearchSolver);
 				break;
 			
 			case "Amplitud":
@@ -78,5 +86,9 @@ public class AgenteCustodio extends SearchBasedAgent {
         // Return the selected action
         return selectedAction;
 	}
+	
+	/*AgenteCustodioState getAgenteCustodioState() {
+		return (AgenteCustodioState) this.getAgentState();
+	}*/
 
 }

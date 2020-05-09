@@ -71,7 +71,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		recorrido=new ArrayList<Integer>();
 		
 		ciudadanosFugados=new ArrayList<Ciudadano>();
-		Ciudadano fugado1= new Ciudadano(16,10);
+		Ciudadano fugado1= new Ciudadano(2,16,10);
 		ciudadanosFugados.add(fugado1);
 	}
 	

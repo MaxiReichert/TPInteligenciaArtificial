@@ -4,11 +4,12 @@ public class Ciudadano {
 
 	private int posicionActual;
 	private int posicionResidencia;
+	private int id;
 	
 	
-	
-	public Ciudadano(int posicionActual, int posicionResidencia) {
+	public Ciudadano(int id, int posicionActual, int posicionResidencia) {
 		super();
+		this.id=id;
 		this.posicionActual = posicionActual;
 		this.posicionResidencia = posicionResidencia;
 	}
@@ -24,6 +25,14 @@ public class Ciudadano {
 	}
 	public void setPosicionResidencia(int posicionResidencia) {
 		this.posicionResidencia = posicionResidencia;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	public void setId(int id) {
+		this.id=id;
 	}
 	
 	

@@ -10,7 +10,7 @@ import frsf.cidisi.faia.state.EnvironmentState;
 public class AgenteCustodioEnvironmentState extends EnvironmentState{
 
 	private HashMap<Integer, Collection<Integer>> mapa;
-	private List<Ciudadano> ciudadanosInfectados;
+	private ArrayList<Ciudadano> ciudadanosInfectados;
 	
 	//terminar de completar con el resto de los nodos
 	public static final Integer[][] posiciones= new Integer [][] {
@@ -51,8 +51,12 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 	}
 	
 	@Override
-	public Object clone() {
-		return mapa.clone();
+	public AgenteCustodioEnvironmentState clone() {
+		AgenteCustodioEnvironmentState nuevoAmbiente= new AgenteCustodioEnvironmentState();
+		nuevoAmbiente.setMapa(mapa);
+		ArrayList<Ciudadano> ciudadanoInfectados= (ArrayList<Ciudadano>) ciudadanosInfectados.clone();
+		nuevoAmbiente.setCiudadanosInfectados(ciudadanoInfectados);
+		return nuevoAmbiente;
 		
 	}
 	
@@ -69,9 +73,9 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 		}
 		
 		ciudadanosInfectados= new ArrayList<Ciudadano>();
-		Ciudadano ciudadano1= new Ciudadano(15,15);
-		Ciudadano ciudadano2= new Ciudadano(10,10);
-		Ciudadano ciudadano3= new Ciudadano(5,5);
+		Ciudadano ciudadano1= new Ciudadano(1,15,15);
+		Ciudadano ciudadano2= new Ciudadano(2,16,10);
+		Ciudadano ciudadano3= new Ciudadano(3,5,5);
 		ciudadanosInfectados.add(ciudadano1);
 		ciudadanosInfectados.add(ciudadano2);
 		ciudadanosInfectados.add(ciudadano3);
@@ -82,6 +86,18 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 	public String toString() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	public ArrayList<Ciudadano> getCiudadanosInfectados(){
+		return ciudadanosInfectados;
+	}
+	
+	public void setCiudadanosInfectados(ArrayList<Ciudadano> ciudadanosInfectados) {
+		this.ciudadanosInfectados=ciudadanosInfectados;
+	}
+	
+	public void setMapa(HashMap<Integer, Collection<Integer>> mapa) {
+		this.mapa=mapa;
 	}
 
 }

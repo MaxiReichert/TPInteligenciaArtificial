@@ -1,5 +1,9 @@
 package TPInteligenciaArtificial;
 
+import AgenteCustodioIA.AgenteCustodio;
+import AgenteCustodioIA.AgenteCustodioMain;
+import AgenteCustodioIA.AgenteCustodioState;
+import frsf.cidisi.faia.exceptions.PrologConnectorException;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -14,7 +18,8 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 
 public class Main extends Application {
-
+	ComboBox<String> metodosBusqueda;
+	
 	@Override
 	public void start(Stage stage) throws Exception {
 		VBox vb= new VBox(20);
@@ -30,7 +35,7 @@ public class Main extends Application {
 		Label lbMetodoBusqueda= new Label("Elija un metodo de busqueda");
 		lbMetodoBusqueda.setFont(Font.font("Arial", 12));
 		
-		ComboBox<String> metodosBusqueda= new ComboBox();
+		metodosBusqueda= new ComboBox();
 		metodosBusqueda.getItems().add("Costo Uniforme");
 		metodosBusqueda.getItems().add("Profundidad");
 		metodosBusqueda.getItems().add("Amplitud");
@@ -46,9 +51,14 @@ public class Main extends Application {
 
 			@Override
 			public void handle(ActionEvent arg0) {
-				/*Aca se debe llamar al main de la IA
-				 * y crear la ventana del mapa
-				 */
+				try {
+					String string= metodosBusqueda.getValue();
+					AgenteCustodioState agentState= AgenteCustodioMain.main(metodosBusqueda.getValue());
+					System.out.println("llega");
+				} catch (PrologConnectorException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			 
 		});
