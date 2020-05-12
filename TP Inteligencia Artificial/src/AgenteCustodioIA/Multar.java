@@ -39,8 +39,8 @@ public class Multar extends SearchAction {
 
 	@Override
 	public EnvironmentState execute(AgentState ast, EnvironmentState est) {
-		this.execute((SearchBasedAgentState) ast);
-			/*AgenteCustodioEnvironmentState estadoAmbiente= (AgenteCustodioEnvironmentState) est;
+		if(this.execute((SearchBasedAgentState) ast)!=null) {
+			AgenteCustodioEnvironmentState estadoAmbiente= (AgenteCustodioEnvironmentState) est;
 			
 			ArrayList<Ciudadano> ciudadanosInfectados= estadoAmbiente.getCiudadanosInfectados();
 			for(int i=0; i<ciudadanosInfectados.size(); i++) {
@@ -50,10 +50,12 @@ public class Multar extends SearchAction {
 					estadoAmbiente.setCiudadanosInfectados(ciudadanosInfectados);
 				}
 			} 
-			return estadoAmbiente;*/
+			return estadoAmbiente;
+		}
+			
 		
 	
-		return null;
+		return est;
 	}
 
 	@Override

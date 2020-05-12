@@ -13,7 +13,6 @@ public class AgenteCustodioMain {
 		SearchBasedAgentSimulator simulator= new SearchBasedAgentSimulator(ambiente, agente);
 		
 		simulator.start();
-		//System.out.println("hola");
 		return (AgenteCustodioState) agente.getAgentState();
 	}
 }

@@ -11,6 +11,7 @@ public class Avanzar extends SearchAction {
 	
 	private int nodo;
 	private Double costo=1.0;
+	private int distancia=100;
 	
 	public Avanzar(int nodo) {
 		this.nodo=nodo;
@@ -27,6 +28,7 @@ public class Avanzar extends SearchAction {
 			if(index >=0) {
 				agentState.setPosicion(nodo);
 				agentState.setCostoCamino(agentState.getCostoCamino()+this.costo);
+				agentState.setDistanciaReocrrida(agentState.getDistanciaReocorrida()+this.distancia);
 				return agentState;
 			}
 		}
@@ -42,7 +44,7 @@ public class Avanzar extends SearchAction {
 	@Override
 	public EnvironmentState execute(AgentState ast, EnvironmentState est) {
 		this.execute((SearchBasedAgentState) ast);
-		return null;
+		return est;
 	}
 
 	@Override

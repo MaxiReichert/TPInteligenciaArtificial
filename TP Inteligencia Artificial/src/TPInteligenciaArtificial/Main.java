@@ -19,6 +19,9 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	ComboBox<String> metodosBusqueda;
+	Label lbDistanciaRecorrida;
+	Label lbCostoRecorrido;
+	AgenteCustodioState agentState;
 	
 	@Override
 	public void start(Stage stage) throws Exception {
@@ -27,7 +30,6 @@ public class Main extends Application {
 		
 		Label lbTitulo= new Label("Agente Custodio");
 		lbTitulo.setFont(Font.font("Time New Romans", 21));
-		//lbTitulo.setAlignment(Pos.TOP_CENTER);
 		
 		HBox hb1= new HBox(10);
 		hb1.setAlignment(Pos.CENTER);
@@ -53,21 +55,35 @@ public class Main extends Application {
 			public void handle(ActionEvent arg0) {
 				try {
 					String string= metodosBusqueda.getValue();
-					AgenteCustodioState agentState= AgenteCustodioMain.main(metodosBusqueda.getValue());
-					System.out.println("llega");
+					agentState= AgenteCustodioMain.main(metodosBusqueda.getValue());
+					
 				} catch (PrologConnectorException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+				lbDistanciaRecorrida.setText("Distancia Recorrida: "+ agentState.getDistanciaReocorrida());
+				lbDistanciaRecorrida.setVisible(true);
+				lbCostoRecorrido.setText("Costo del Recorrido: "+ agentState.getCostoCamino());
+				lbCostoRecorrido.setVisible(true);
+				System.out.println("llega");
 			}
 			 
 		});
 		
 		hb2.getChildren().add(btn);
 		
+		lbDistanciaRecorrida= new Label();
+		lbDistanciaRecorrida.setVisible(false);
+		
+		lbCostoRecorrido= new Label();
+		lbCostoRecorrido.setVisible(false);
+		
+		
 		vb.getChildren().add(lbTitulo);
 		vb.getChildren().add(hb1);
 		vb.getChildren().add(hb2);
+		vb.getChildren().add(lbDistanciaRecorrida);
+		vb.getChildren().add(lbCostoRecorrido);
 		Scene scene= new Scene(vb, 350,200);
 		stage.setScene(scene);
 		stage.show();
