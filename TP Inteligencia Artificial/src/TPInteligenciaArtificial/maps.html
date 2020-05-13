@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+    <title>Maps JavaScript API</title>
+	<style> 
+  	  #map {
+        height: 100%;
+      }
+     
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	</style> 
+</head>  
+	<body>
+		<div id ="map"> </div> 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuoI-Y5rUMF1IZKm-EWERJnDkHPdiCn8E&callback=initMap" async defer></script>
+	<script type="text/javascript">
+		
+      var map;
+  	 function initMap() {
+  	 	var markers= new Array();
+  	 	var polyLineCoords= new Array();
+  	 	var myOptions ={
+  	 		zoom:15.8,
+  	 		center:{lat:-31.6090549, lng:-60.6706232},
+  	 	};
+  	 	
+        map = new google.maps.Map(document.getElementById('map'), myOptions);
+       
+	   document.addMarker= function(lat, lng){
+        	var latLng= new google.maps.LatLng(lat, lng);
+        	var marker= new google.maps.Marker({
+        		position:latLng
+        	})
+        	
+        	marker.setMap(document.map);
+        	markers.push(marker);
+        }
+        
+        document.deleteMarkers= function(){
+        	clearMarkers();
+        	markers= new Array();
+        }
+        
+        document.addPolyLineCoord= function(lat, lng){
+        	var coord= "lat:" + lat + ", " + "lng:" + lng;
+        	polyLineCoords.push(coord);
+        }
+        
+        documnet.createPolyLine= function(){
+        	var camino= new google.maps.Polyline({
+        	path: polyLineCoords,
+        	strokeColor: '#FF0000',
+          	strokeOpacity: 1.0,
+          	strokeWeight: 2
+        	});
+        	
+        	camino.setMap(document.map);
+        }
+        
+        dcoument.removePolyLine= function(){
+        	camino.setMap(null);
+        	polyLineCoords= new Array();
+        }
+        
+      }
+        
+ 
+      
+	</script>
+ 
+	</body> 
+</html>
