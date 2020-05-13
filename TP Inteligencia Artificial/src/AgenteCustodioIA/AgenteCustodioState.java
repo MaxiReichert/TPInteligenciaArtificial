@@ -225,11 +225,24 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 					ActualizarPosicionCiudadano(percepcion.getCiudadano());
 					System.out.println("estado actualizado");
 					break;
+				case 1:
+					ActualizarSensor(percepcion.getCiudadano());
+					break;
 			}
 		}
 		
 	}
 	
+	private void ActualizarSensor(Ciudadano ciudadano) {
+		this.ciudadanosFugados.add(ciudadano);
+		for(int i=0; i<this.getSensores().size(); i++) {
+			if(ciudadano.getPosicionActual()==this.getSensores().get(i).getPosicion()) {
+				this.getSensores().get(i).setEstado(true);
+			}
+		}
+		
+	}
+
 	private void ActualizarPosicionCiudadano(Ciudadano ciudadano) {
 		for(int i=0; i<this.getCiudadanosFugados().size(); i++) {
 			if(ciudadano.getId()==this.getCiudadanosFugados().get(i).getId()) {

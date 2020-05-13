@@ -15,10 +15,16 @@ public class AgenteCustodioEnvironment extends Environment {
 		this.environmentState= new AgenteCustodioEnvironmentState();
 		
 		percepciones= new HashMap<Integer, AgenteCustodioPerception>();
+		
 		AgenteCustodioPerception percepcion1= new AgenteCustodioPerception();
 		percepcion1.setTipo(AgenteCustodioPerception.CAMBIO_POSCION_CIUDADANO);
 		percepcion1.setCiudadano(new Ciudadano(5,24,50));
 		percepciones.put(6, percepcion1);
+		
+		AgenteCustodioPerception percepcion2= new AgenteCustodioPerception();
+		percepcion2.setTipo(AgenteCustodioPerception.NUEVO_CIUDADANO);
+		percepcion2.setCiudadano(new Ciudadano(6,6,10));
+		percepciones.put(13,percepcion2);
 	}
 	
 	@Override
@@ -31,6 +37,9 @@ public class AgenteCustodioEnvironment extends Environment {
 				case 0:
 					int nuevaPosicion=percepcion.getCiudadano().getPosicionActual();
 					ambiente=actualizarPoscionCiudadano(nuevaPosicion, ambiente, percepcion.getCiudadano());
+					break;
+				case 1:
+					ambiente.getCiudadanosInfectados().add(percepcion.getCiudadano());
 					break;
 			}
 			return percepcion;

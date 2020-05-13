@@ -15,13 +15,22 @@ public class Multar extends SearchAction {
 		AgenteCustodioState agentState= (AgenteCustodioState) s;
 		
 		ArrayList<Ciudadano> ciudadanosFugados= new ArrayList<Ciudadano>();
+		ArrayList<Sensor> sensores= new ArrayList<Sensor>();
+		int posCiudadanoEliminado=-1;
+		sensores= agentState.getSensores();
 		ciudadanosFugados= agentState.getCiudadanosFugados();
 		if(!ciudadanosFugados.isEmpty()) {
 			for(int i=0; i<ciudadanosFugados.size(); i++) {
 				if(agentState.getPosicion()==ciudadanosFugados.get(i).getPosicionActual()) {
 					idCiudadanoEliminado=ciudadanosFugados.get(i).getId();
+					posCiudadanoEliminado=ciudadanosFugados.get(i).getPosicionActual();
 					ciudadanosFugados.remove(i);
 					agentState.setCiudadanosFugados(ciudadanosFugados);
+				}
+			}
+			for(int i=0; i<sensores.size(); i++) {
+				if(posCiudadanoEliminado==sensores.get(i).getPosicion()) {
+					sensores.get(i).setEstado(false);
 				}
 			}
 			return agentState;
