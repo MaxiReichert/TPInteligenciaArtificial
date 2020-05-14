@@ -1,5 +1,7 @@
 package TPInteligenciaArtificial;
 
+import java.io.IOException;
+
 import AgenteCustodioIA.AgenteCustodio;
 import AgenteCustodioIA.AgenteCustodioMain;
 import AgenteCustodioIA.AgenteCustodioState;
@@ -26,7 +28,7 @@ public class Main extends Application {
 	AgenteCustodioState agentState;
 	
 	@Override
-	public void start(Stage stage) throws Exception {
+	public void start(Stage stage) throws Exception {	
 		VBox vb= new VBox(20);
 		vb.setAlignment(Pos.TOP_CENTER);
 		
@@ -106,6 +108,16 @@ public class Main extends Application {
 	}
 	
 	public static void main(String[] args) {
+		/*
+		// Test calcular distancia
+		DistanceTime distanceTime = new DistanceTime();
+		try {
+			Long[] calculate = distanceTime.calculate("-31.615911,-60.672965", "-31.615826,-60.673228");
+			System.out.println(calculate[0] + " " + calculate[1]);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		*/
 		launch(args);
 
 	}
