@@ -2,6 +2,7 @@ package AgenteCustodioIA;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.logging.Logger;
 
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -16,15 +17,15 @@ public class AgenteCustodioEnvironment extends Environment {
 		
 		percepciones= new HashMap<Integer, AgenteCustodioPerception>();
 		
-		AgenteCustodioPerception percepcion1= new AgenteCustodioPerception();
-		percepcion1.setTipo(AgenteCustodioPerception.CAMBIO_POSCION_CIUDADANO);
-		percepcion1.setCiudadano(new Ciudadano(5,24,50));
-		percepciones.put(6, percepcion1);
+		AgenteCustodioPerception percepcion6= new AgenteCustodioPerception();
+		percepcion6.setTipo(AgenteCustodioPerception.CAMBIO_POSICION_CIUDADANO);
+		percepcion6.setCiudadano(new Ciudadano(5,24,50));
+		percepciones.put(6, percepcion6);
 		
-		AgenteCustodioPerception percepcion2= new AgenteCustodioPerception();
-		percepcion2.setTipo(AgenteCustodioPerception.NUEVO_CIUDADANO);
-		percepcion2.setCiudadano(new Ciudadano(6,6,10));
-		percepciones.put(13,percepcion2);
+		AgenteCustodioPerception percepcion13= new AgenteCustodioPerception();
+		percepcion13.setTipo(AgenteCustodioPerception.NUEVO_CIUDADANO);
+		percepcion13.setCiudadano(new Ciudadano(6,6,10));
+		percepciones.put(13,percepcion13);
 	}
 	
 	@Override
@@ -34,11 +35,11 @@ public class AgenteCustodioEnvironment extends Environment {
 		if(percepcion!=null) {
 			AgenteCustodioEnvironmentState ambiente= (AgenteCustodioEnvironmentState) this.getEnvironmentState();
 			switch (percepcion.getTipo()){
-				case 0:
+				case 0: //CAMBIO_POSICION_CIUDADANO
 					int nuevaPosicion=percepcion.getCiudadano().getPosicionActual();
-					ambiente=actualizarPoscionCiudadano(nuevaPosicion, ambiente, percepcion.getCiudadano());
+					ambiente=actualizarPosicionCiudadano(nuevaPosicion, ambiente, percepcion.getCiudadano());
 					break;
-				case 1:
+				case 1: //NUEVO_CIUDADANO
 					ambiente.getCiudadanosInfectados().add(percepcion.getCiudadano());
 					break;
 			}
@@ -47,7 +48,7 @@ public class AgenteCustodioEnvironment extends Environment {
 		return null;
 	}
 
-	private AgenteCustodioEnvironmentState actualizarPoscionCiudadano(int nuevaPosicion, AgenteCustodioEnvironmentState ambiente,
+	private AgenteCustodioEnvironmentState actualizarPosicionCiudadano(int nuevaPosicion, AgenteCustodioEnvironmentState ambiente,
 			Ciudadano ciudadano) {
 		for(int i=0; i<ambiente.getCiudadanosInfectados().size(); i++) {
 			if(ciudadano.getId()==ambiente.getCiudadanosInfectados().get(i).getId()) {
@@ -58,6 +59,11 @@ public class AgenteCustodioEnvironment extends Environment {
 		return ambiente;
 		
 	}
+	
+	@Override
+    public String toString() {
+        return environmentState.toString();
+    }
 	
 	
 }

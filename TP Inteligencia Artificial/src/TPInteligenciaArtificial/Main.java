@@ -52,7 +52,6 @@ public class Main extends Application {
 		
 		Button btn= new Button("Avanzar");
 		
-		
 		hb2.getChildren().add(btn);
 		
 		lbDistanciaRecorrida= new Label();
@@ -74,7 +73,7 @@ public class Main extends Application {
 
 			@Override
 			public void handle(ActionEvent arg0) {
-				/*try {
+				try {
 					String string= metodosBusqueda.getValue();
 					agentState= AgenteCustodioMain.main(metodosBusqueda.getValue());
 					
@@ -85,7 +84,7 @@ public class Main extends Application {
 				lbDistanciaRecorrida.setText("Distancia Recorrida: "+ agentState.getDistanciaReocorrida());
 				lbDistanciaRecorrida.setVisible(true);
 				lbCostoRecorrido.setText("Costo del Recorrido: "+ agentState.getCostoCamino());
-				lbCostoRecorrido.setVisible(true);*/
+				lbCostoRecorrido.setVisible(true);
 				
 				VBox vb2= new VBox();
 		
@@ -113,8 +112,8 @@ public class Main extends Application {
 	
 	private void InicializarNodoCoordenada() {
 		Double[][] nodoCoordenada= {
-				{-31.615911, -60.672965},
-				{-31.615826, -60.673228},
+				{-31.615911, -60.672965}, //Alm. Brown y Pedro de vega
+				{-31.615826, -60.673228}, //Echague y pedro de vega
 				{-31.615559, -60.674329},
 				{-31.615344, -60.675402},
 				{-31.615143, -60.676413},

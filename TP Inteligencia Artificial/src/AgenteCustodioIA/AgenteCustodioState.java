@@ -7,6 +7,8 @@ import java.util.HashMap;
 
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
+import frsf.cidisi.faia.state.AgentState;
+import sun.management.resources.agent;
 
 public class AgenteCustodioState extends SearchBasedAgentState {
 
@@ -203,9 +205,9 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		recorrido=new ArrayList<Integer>();
 		
 		ciudadanosFugados=new ArrayList<Ciudadano>();
-		ciudadanosFugados.add(new Ciudadano(2,16,10));
-		ciudadanosFugados.add(new Ciudadano(4,31,38));
-		ciudadanosFugados.add(new Ciudadano(5,19,50));
+		ciudadanosFugados.add(new Ciudadano(10,16,10));
+		ciudadanosFugados.add(new Ciudadano(11,31,38));
+		ciudadanosFugados.add(new Ciudadano(12,19,50));
 		
 		sensores= new ArrayList<Sensor>();
 		sensores.add(new Sensor(6,false));
@@ -223,7 +225,6 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 			switch(percepcion.getTipo()) {
 				case 0:
 					ActualizarPosicionCiudadano(percepcion.getCiudadano());
-					System.out.println("estado actualizado");
 					break;
 				case 1:
 					ActualizarSensor(percepcion.getCiudadano());
@@ -276,11 +277,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 
 	
 
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+
 
 
 	public int getPosicion() {
@@ -329,7 +326,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		return this.distanciaRecorrida;
 	}
 	
-	public void setDistanciaReocrrida(int distanciaRecorrida) {
+	public void setDistanciaRecorrida(int distanciaRecorrida) {
 		this.distanciaRecorrida=distanciaRecorrida;
 	}
 
@@ -342,7 +339,30 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 	}
 	
 	
-
+	@Override
+	public String toString() {
+		String agentState = "Nodo " + String.valueOf(this.posicion);
+		
+		agentState += " - Recorrido: ";
+		for (int nodo : recorrido) {
+			agentState += String.valueOf(nodo) + "-"; 
+		}
+		
+		
+		agentState += "\nCiudadanos fugados: ";
+		for (Ciudadano ciudadano : ciudadanosFugados) {
+			agentState += "(" + String.valueOf(ciudadano.getId()) + ", " 
+						+ String.valueOf(ciudadano.getPosicionActual()) + ", " 
+						+ ciudadano.getPosicionResidencia() + ") - ";
+		}
+		
+		agentState += "Sensores: ";
+		for (Sensor sensor : sensores) {
+			agentState += "(" + String.valueOf(sensor.isEstado()) + ", " + String.valueOf(sensor.getPosicion()) + ") - "; 
+		}
+				
+		return agentState;
+	}
 	
 
 }

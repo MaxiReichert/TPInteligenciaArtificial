@@ -5,8 +5,8 @@ import frsf.cidisi.faia.simulator.SearchBasedAgentSimulator;
 
 public class AgenteCustodioMain {
 
-	public static AgenteCustodioState main(String string) throws PrologConnectorException{
-		AgenteCustodio agente= new AgenteCustodio(string);
+	public static AgenteCustodioState main(String estrategia) throws PrologConnectorException{
+		AgenteCustodio agente= new AgenteCustodio(estrategia);
 		
 		AgenteCustodioEnvironment ambiente= new AgenteCustodioEnvironment();
 		

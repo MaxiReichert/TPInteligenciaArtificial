@@ -1,0 +1,123 @@
+<tree id="11" edgedefault="directed">
+<node Id="0" Action="null" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="1" Action="Avanzar" Cost="1.0" Estado_Agente="Nodo 20 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="2" Action="Avanzar" Cost="1.0" Estado_Agente="Nodo 22 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="3" Action="Avanzar" Cost="1.0" Estado_Agente="Nodo 33 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="4" Action="Avanzar" Cost="2.0" Estado_Agente="Nodo 16 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="5" Action="Avanzar" Cost="2.0" Estado_Agente="Nodo 19 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="10" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 1 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="11" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 17 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="21" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 2 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="41" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 3 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="42" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 15 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="22" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 0 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="23" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 18 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="43" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 1 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="44" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 19 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="45" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 37 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="12" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 18 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="13" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 35 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="24" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 17 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="25" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 37 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="46" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 0 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="47" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 52 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="26" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 36 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="27" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 50 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="48" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 37 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="49" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 49 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="50" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 57 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="6" Action="Avanzar" Cost="2.0" Estado_Agente="Nodo 14 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="7" Action="Avanzar" Cost="2.0" Estado_Agente="Nodo 23 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="14" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 3 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="15" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 15 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="28" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 4 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="51" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 5 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="52" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 13 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="29" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 16 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="53" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 1 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="54" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 17 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="16" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 24 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="17" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 31 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="30" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 12 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="31" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 25 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="55" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 5 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="56" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 13 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="57" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 26 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="58" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 29 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="32" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 32 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="33" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 41 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="34" Action="Multar" Cost="4.0" Estado_Agente="Nodo 31 - Recorrido:  Ciudadanos fugados: Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="59" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 33 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="60" Action="Avanzar" Cost="5.0" Estado_Agente="Nodo 46 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="8" Action="Avanzar" Cost="2.0" Estado_Agente="Nodo 34 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="9" Action="Avanzar" Cost="2.0" Estado_Agente="Nodo 39 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="18" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 20 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="19" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 35 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="35" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 16 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="36" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 19 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="37" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 36 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="38" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 50 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="20" Action="Avanzar" Cost="3.0" Estado_Agente="Nodo 48 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="39" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 47 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<node Id="40" Action="Avanzar" Cost="4.0" Estado_Agente="Nodo 59 - Recorrido:  Ciudadanos fugados: (11, 31, 38) - Sensores: (false, 6) - (false, 20) - (false, 114) - (false, 142) - "/>
+<edge source="0" target="1"/>
+<edge source="0" target="2"/>
+<edge source="0" target="3"/>
+<edge source="1" target="4"/>
+<edge source="1" target="5"/>
+<edge source="2" target="6"/>
+<edge source="2" target="7"/>
+<edge source="3" target="8"/>
+<edge source="3" target="9"/>
+<edge source="4" target="10"/>
+<edge source="4" target="11"/>
+<edge source="5" target="12"/>
+<edge source="5" target="13"/>
+<edge source="10" target="21"/>
+<edge source="11" target="22"/>
+<edge source="11" target="23"/>
+<edge source="21" target="41"/>
+<edge source="21" target="42"/>
+<edge source="22" target="43"/>
+<edge source="23" target="44"/>
+<edge source="23" target="45"/>
+<edge source="12" target="24"/>
+<edge source="12" target="25"/>
+<edge source="13" target="26"/>
+<edge source="13" target="27"/>
+<edge source="24" target="46"/>
+<edge source="25" target="47"/>
+<edge source="26" target="48"/>
+<edge source="27" target="49"/>
+<edge source="27" target="50"/>
+<edge source="6" target="14"/>
+<edge source="6" target="15"/>
+<edge source="7" target="16"/>
+<edge source="7" target="17"/>
+<edge source="14" target="28"/>
+<edge source="15" target="29"/>
+<edge source="28" target="51"/>
+<edge source="28" target="52"/>
+<edge source="29" target="53"/>
+<edge source="29" target="54"/>
+<edge source="16" target="30"/>
+<edge source="16" target="31"/>
+<edge source="17" target="32"/>
+<edge source="17" target="33"/>
+<edge source="17" target="34"/>
+<edge source="30" target="55"/>
+<edge source="30" target="56"/>
+<edge source="31" target="57"/>
+<edge source="31" target="58"/>
+<edge source="32" target="59"/>
+<edge source="33" target="60"/>
+<edge source="8" target="18"/>
+<edge source="8" target="19"/>
+<edge source="9" target="20"/>
+<edge source="18" target="35"/>
+<edge source="18" target="36"/>
+<edge source="19" target="37"/>
+<edge source="19" target="38"/>
+<edge source="20" target="39"/>
+<edge source="20" target="40"/>
+</tree>

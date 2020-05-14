@@ -70,7 +70,7 @@ public class Multar extends SearchAction {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Multar";
 	}
 
 }
