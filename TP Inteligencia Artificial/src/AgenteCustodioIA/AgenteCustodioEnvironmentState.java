@@ -220,6 +220,8 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 			str += String.valueOf(ciudadano.getPosicionResidencia()) + ") - ";
 		}
 		
+		str += "\n Mapa real: " + mapa.toString();
+		
 		
 		return str.toString();
 	}
@@ -235,5 +237,11 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 	public void setMapa(HashMap<Integer, Collection<Integer>> mapa) {
 		this.mapa=mapa;
 	}
+
+	public HashMap<Integer, Collection<Integer>> getMapa() {
+		return mapa;
+	}
+	
+	
 
 }

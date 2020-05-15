@@ -1,14 +1,13 @@
 package AgenteCustodioIA;
 
 import java.util.List;
+import java.util.Map.Entry;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
-import frsf.cidisi.faia.state.AgentState;
-import sun.management.resources.agent;
 
 public class AgenteCustodioState extends SearchBasedAgentState {
 
@@ -205,9 +204,9 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		recorrido=new ArrayList<Integer>();
 		
 		ciudadanosFugados=new ArrayList<Ciudadano>();
-		ciudadanosFugados.add(new Ciudadano(10,16,10));
-		ciudadanosFugados.add(new Ciudadano(11,31,38));
-		ciudadanosFugados.add(new Ciudadano(12,19,50));
+		ciudadanosFugados.add(new Ciudadano(2,16,10));
+		ciudadanosFugados.add(new Ciudadano(4,31,38));
+		ciudadanosFugados.add(new Ciudadano(5,19,50));
 		
 		sensores= new ArrayList<Sensor>();
 		sensores.add(new Sensor(6,false));
@@ -229,11 +228,35 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 				case 1:
 					ActualizarSensor(percepcion.getCiudadano());
 					break;
+				case 2: 
+					actualizarMapa(percepcion.getNodoCortado());
 			}
 		}
 		
 	}
 	
+	private void actualizarMapa(int nodoCortado) {
+		
+		//elimino los sucesores del nodoCortado
+		ArrayList<Integer> sucesores= new ArrayList<Integer>();
+		mapaConocido.put(nodoCortado, sucesores);
+		
+		//busco en el resto de nodos donde aparece el nodoCortado en la lista de sucesores y lo elimino
+		for (Entry<Integer, Collection<Integer>> entry : mapaConocido.entrySet()) {
+			Integer key = entry.getKey();
+			if(mapaConocido.get(key).contains(nodoCortado)) {
+				Collection<Integer> nuevosSucesores = mapaConocido.get(key);
+				nuevosSucesores.remove(nodoCortado);
+				mapaConocido.put(key, nuevosSucesores);
+			}
+		}
+		
+		//seteo el mapa actualizado
+		this.setMapaConocido(mapaConocido);
+		
+		
+	}
+
 	private void ActualizarSensor(Ciudadano ciudadano) {
 		this.ciudadanosFugados.add(ciudadano);
 		for(int i=0; i<this.getSensores().size(); i++) {
@@ -261,6 +284,9 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		nuevoEstado.setCiudadanosFugados(ciudadanoFugados);
 		nuevoEstado.setCostoCamino(costoCamino);
 		ArrayList<Integer> camino= (ArrayList<Integer>) recorrido.clone();
+		HashMap<Integer, Collection<Integer>> mapa = (HashMap<Integer, Collection<Integer>>) mapaConocido.clone();
+		nuevoEstado.setMapaConocido(mapa);
+		
 		return nuevoEstado;
 	}
 	
@@ -273,11 +299,6 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		}
 		 return (posicion==((AgenteCustodioState)obj).getPosicion() && ciudadanosFugados.size()==((AgenteCustodioState)obj).getCiudadanosFugados().size());
 	}
-
-
-	
-
-
 
 
 	public int getPosicion() {
@@ -322,7 +343,11 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		return this.mapaConocido;
 	}
 	
-	public int getDistanciaReocorrida() {
+	public void setMapaConocido(HashMap<Integer, Collection<Integer>> mapaConocido) {
+		this.mapaConocido = mapaConocido;
+	}
+
+	public int getDistanciaRecorrida() {
 		return this.distanciaRecorrida;
 	}
 	
@@ -342,25 +367,27 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 	@Override
 	public String toString() {
 		String agentState = "Nodo " + String.valueOf(this.posicion);
-		
+
 		agentState += " - Recorrido: ";
 		for (int nodo : recorrido) {
 			agentState += String.valueOf(nodo) + "-"; 
 		}
 		
-		
+		agentState += "\n Mapa: " + mapaConocido.toString();
+
+
 		agentState += "\nCiudadanos fugados: ";
 		for (Ciudadano ciudadano : ciudadanosFugados) {
 			agentState += "(" + String.valueOf(ciudadano.getId()) + ", " 
 						+ String.valueOf(ciudadano.getPosicionActual()) + ", " 
 						+ ciudadano.getPosicionResidencia() + ") - ";
 		}
-		
+
 		agentState += "Sensores: ";
 		for (Sensor sensor : sensores) {
 			agentState += "(" + String.valueOf(sensor.isEstado()) + ", " + String.valueOf(sensor.getPosicion()) + ") - "; 
 		}
-				
+
 		return agentState;
 	}
 	

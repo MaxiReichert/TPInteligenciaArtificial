@@ -58,16 +58,22 @@ public class AgenteCustodioPerception extends Perception {
 	public String toString() {
 		StringBuffer str = new StringBuffer();
 		String tipoPercepcion;
-		String idCiudadano = String.valueOf(ciudadano.getId());
-		String posActualCiudadano = String.valueOf(ciudadano.getPosicionActual());
-		String posResidenciaCiudadano = String.valueOf(ciudadano.getPosicionResidencia());
+		String idCiudadano;
+		String posActualCiudadano;
+		String posResidenciaCiudadano;
 		
 		switch(tipo) {
 		case 0:
+			idCiudadano = String.valueOf(ciudadano.getId());
+			posActualCiudadano = String.valueOf(ciudadano.getPosicionActual());
+			posResidenciaCiudadano = String.valueOf(ciudadano.getPosicionResidencia());
 			str.append("CAMBIO_POSICION_CIUDADANO - ");
 			str.append("(id: " + idCiudadano + ", posActual: " + posActualCiudadano + ", posResidencia: " + posResidenciaCiudadano + ")");
 			break;
 		case 1:
+			idCiudadano = String.valueOf(ciudadano.getId());
+			posActualCiudadano = String.valueOf(ciudadano.getPosicionActual());
+			posResidenciaCiudadano = String.valueOf(ciudadano.getPosicionResidencia());
 			str.append("NUEVO_CIUDADANO - ");
 			str.append("(id: " + idCiudadano + ", posActual: " + posActualCiudadano + ", posResidencia: " + posResidenciaCiudadano + ")");
 			break;

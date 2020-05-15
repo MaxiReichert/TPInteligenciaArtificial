@@ -81,7 +81,7 @@ public class Main extends Application {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				lbDistanciaRecorrida.setText("Distancia Recorrida: "+ agentState.getDistanciaReocorrida());
+				lbDistanciaRecorrida.setText("Distancia Recorrida: "+ agentState.getDistanciaRecorrida());
 				lbDistanciaRecorrida.setVisible(true);
 				lbCostoRecorrido.setText("Costo del Recorrido: "+ agentState.getCostoCamino());
 				lbCostoRecorrido.setVisible(true);

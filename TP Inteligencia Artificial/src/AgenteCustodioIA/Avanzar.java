@@ -28,7 +28,7 @@ public class Avanzar extends SearchAction {
 			if(index >=0) {
 				agentState.setPosicion(nodo);
 				agentState.setCostoCamino(agentState.getCostoCamino()+this.costo);
-				agentState.setDistanciaRecorrida(agentState.getDistanciaReocorrida()+this.distancia);
+				agentState.setDistanciaRecorrida(agentState.getDistanciaRecorrida()+this.distancia);
 				return agentState;
 			}
 		}
