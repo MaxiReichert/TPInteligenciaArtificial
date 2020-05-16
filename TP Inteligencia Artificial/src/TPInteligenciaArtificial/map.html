@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0">
+    <title>Maps JavaScript API</title>
+	<style> 
+  	  #map {
+        height: 100%;
+      }
+     
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+	</style> 
+</head>  
+	<body>
+		<div id ="map"> </div> 
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuoI-Y5rUMF1IZKm-EWERJnDkHPdiCn8E&callback=initMap" async defer></script>
+	<script id="data" type="application/json">
+		{
+			"nodes": [
+				{"lat": -31.615911, "lng": -60.672965},
+				{"lat": -31.615826, "lng": -60.673228},
+				{"lat": -31.615559, "lng": -60.674329},
+				{"lat": -31.615344, "lng": -60.675402},
+				{"lat": -31.615143, "lng": -60.676413},
+				{"lat": -31.614932, "lng": -60.677495},
+				{"lat": -31.614707, "lng": -60.678544},
+				{"lat": -31.614463, "lng": -60.679721},
+				{"lat": -31.614128, "lng": -60.681230},
+				{"lat": -31.613323, "lng": -60.680600},
+				{"lat": -31.613554, "lng": -60.679463},
+				{"lat": -31.613771, "lng": -60.678317},
+				{"lat": -31.614029, "lng": -60.677228},
+				{"lat": -31.614239, "lng": -60.676150},
+				{"lat": -31.614417, "lng": -60.675128},
+				{"lat": -31.614650, "lng": -60.674080},
+				{"lat": -31.614940, "lng": -60.672975},
+				{"lat": -31.615162, "lng": -60.671988},
+				{"lat": -31.614408, "lng": -60.671017},
+				{"lat": -31.614264, "lng": -60.671650},
+				{"lat": -31.614036, "lng": -60.672712},
+				{"lat": -31.613803, "lng": -60.673785},
+				{"lat": -31.613579, "lng": -60.674842},
+				{"lat": -31.613339, "lng": -60.675904},
+				{"lat": -31.613108, "lng": -60.676977},
+				{"lat": -31.612866, "lng": -60.678045},
+				{"lat": -31.612628, "lng": -60.679196},
+				{"lat": -31.612477, "lng": -60.679926},
+				{"lat": -31.611657, "lng": -60.679264},
+				{"lat": -31.611963, "lng": -60.677767},
+				{"lat": -31.612207, "lng": -60.676726},
+				{"lat": -31.612438, "lng": -60.675648},
+				{"lat": -31.612653, "lng": -60.674597},
+				{"lat": -31.612895, "lng": -60.673527},
+				{"lat": -31.613123, "lng": -60.672451},
+				{"lat": -31.613347, "lng": -60.671397},
+				{"lat": -31.613525, "lng": -60.670343},
+				{"lat": -31.613621, "lng": -60.670086},
+				{"lat": -31.612630, "lng": -60.672318},
+				{"lat": -31.612404, "lng": -60.673407},
+				{"lat": -31.612189, "lng": -60.674458},
+				{"lat": -31.611947, "lng": -60.675515},
+				{"lat": -31.611716, "lng": -60.676596},
+				{"lat": -31.610846, "lng": -60.678613},
+				{"lat": -31.611058, "lng": -60.677532},
+				{"lat": -31.611300, "lng": -60.676475},
+				{"lat": -31.611519, "lng": -60.675407},
+				{"lat": -31.611755, "lng": -60.674350},
+				{"lat": -31.611977, "lng": -60.673269},
+				{"lat": -31.612210, "lng": -60.672207},
+				{"lat": -31.612418, "lng": -60.671134},
+				{"lat": -31.612624, "lng": -60.670085},
+				{"lat": -31.612827, "lng": -60.669147},
+				{"lat": -31.612615, "lng": -60.668895},
+				{"lat": -31.612055, "lng": -60.668321},
+				{"lat": -31.611941, "lng": -60.668772},
+				{"lat": -31.611733, "lng": -60.669829},
+				{"lat": -31.611516, "lng": -60.670886},
+				{"lat": -31.611290, "lng": -60.671967},
+				{"lat": -31.611080, "lng": -60.673010},
+				{"lat": -31.610838, "lng": -60.674094},
+				{"lat": -31.610616, "lng": -60.675156},
+				{"lat": -31.610406, "lng": -60.676215},
+				{"lat": -31.610168, "lng": -60.677277},
+				{"lat": -31.609974, "lng": -60.678082},
+				{"lat": -31.609108, "lng": -60.677634},
+				{"lat": -31.609250, "lng": -60.677007},
+				{"lat": -31.609469, "lng": -60.675961},
+				{"lat": -31.609695, "lng": -60.674913},
+				{"lat": -31.609930, "lng": -60.673843},
+				{"lat": -31.610149, "lng": -60.672765},
+				{"lat": -31.610380, "lng": -60.671708},
+				{"lat": -31.610602, "lng": -60.670640},
+				{"lat": -31.610824, "lng": -60.669591},
+				{"lat": -31.611036, "lng": -60.668533},
+				{"lat": -31.611207, "lng": -60.667677},
+				{"lat": -31.610326, "lng": -60.667276},
+				{"lat": -31.610102, "lng": -60.668285},
+				{"lat": -31.609912, "lng": -60.669342},
+				{"lat": -31.609697, "lng": -60.670391},
+				{"lat": -31.609466, "lng": -60.671459},
+				{"lat": -31.609238, "lng": -60.672529},
+				{"lat": -31.609007, "lng": -60.673588},
+				{"lat": -31.608760, "lng": -60.674653},
+				{"lat": -31.608543, "lng": -60.675715},
+				{"lat": -31.608230, "lng": -60.677148},
+				{"lat": -31.607346, "lng": -60.676681},
+				{"lat": -31.607586, "lng": -60.675452},
+				{"lat": -31.607794, "lng": -60.674379},
+				{"lat": -31.607997, "lng": -60.673322},
+				{"lat": -31.608134, "lng": -60.672260},
+				{"lat": -31.608335, "lng": -60.671227},
+				{"lat": -31.608563, "lng": -60.670098},
+				{"lat": -31.608797, "lng": -60.669026},
+				{"lat": -31.609012, "lng": -60.667993},
+				{"lat": -31.609224, "lng": -60.666942},
+				{"lat": -31.608361, "lng": -60.666714},
+				{"lat": -31.608208, "lng": -60.667773},
+				{"lat": -31.608009, "lng": -60.668827},
+				{"lat": -31.607785, "lng": -60.669895},
+				{"lat": -31.607504, "lng": -60.670997},
+				{"lat": -31.607303, "lng": -60.672019},
+				{"lat": -31.607230, "lng": -60.672542},
+				{"lat": -31.607148, "lng": -60.673105},
+				{"lat": -31.606938, "lng": -60.674151},
+				{"lat": -31.606737, "lng": -60.675219},
+				{"lat": -31.606522, "lng": -60.676217},
+				{"lat": -31.606019, "lng": -60.675935},
+				{"lat": -31.605775, "lng": -60.675828},
+				{"lat": -31.605898, "lng": -60.674983},
+				{"lat": -31.606108, "lng": -60.673948},
+				{"lat": -31.606405, "lng": -60.672331},
+				{"lat": -31.606236, "lng": -60.671733},
+				{"lat": -31.606448, "lng": -60.670727},
+				{"lat": -31.606976, "lng": -60.669673},
+				{"lat": -31.607177, "lng": -60.668592},
+				{"lat": -31.607405, "lng": -60.667538},
+				{"lat": -31.607567, "lng": -60.666495},
+				{"lat": -31.606726, "lng": -60.666307},
+				{"lat": -31.606575, "lng": -60.667316},
+				{"lat": -31.606369, "lng": -60.668386},
+				{"lat": -31.606129, "lng": -60.669451},
+				{"lat": -31.605933, "lng": -60.670620},
+				{"lat": -31.605699, "lng": -60.671573},
+				{"lat": -31.605490, "lng": -60.672637},
+				{"lat": -31.605280, "lng": -60.673726},
+				{"lat": -31.605081, "lng": -60.674795},
+				{"lat": -31.604940, "lng": -60.675468},
+				{"lat": -31.605009, "lng": -60.672518},
+				{"lat": -31.605219, "lng": -60.671440},
+				{"lat": -31.605791, "lng": -60.666103},
+				{"lat": -31.605659, "lng": -60.667070},
+				{"lat": -31.605431, "lng": -60.668143},
+				{"lat": -31.605216, "lng": -60.669194},
+				{"lat": -31.604988, "lng": -60.670363},
+				{"lat": -31.604787, "lng": -60.671323},
+				{"lat": -31.604586, "lng": -60.672417},
+				{"lat": -31.604376, "lng": -60.673474},
+				{"lat": -31.604161, "lng": -60.674536},
+				{"lat": -31.604033, "lng": -60.675169},
+				{"lat": -31.603101, "lng": -60.674874},
+				{"lat": -31.603252, "lng": -60.674257},
+				{"lat": -31.603435, "lng": -60.673243},
+				{"lat": -31.603645, "lng": -60.672197},
+				{"lat": -31.603860, "lng": -60.671129},
+				{"lat": -31.604070, "lng": -60.670056},
+				{"lat": -31.604276, "lng": -60.669010},
+				{"lat": -31.604514, "lng": -60.667894},
+				{"lat": -31.604715, "lng": -60.666810},
+				{"lat": -31.604925, "lng": -60.665822},
+				{"lat": -31.604008, "lng": -60.665571},
+				{"lat": -31.603807, "lng": -60.666553},
+				{"lat": -31.603569, "lng": -60.667659},
+				{"lat": -31.603365, "lng": -60.668752},
+				{"lat": -31.603160, "lng": -60.669801},
+				{"lat": -31.602950, "lng": -60.670869},
+				{"lat": -31.602738, "lng": -60.671945},
+				{"lat": -31.602519, "lng": -60.673010},
+				{"lat": -31.602327, "lng": -60.674024},
+				{"lat": -31.602204, "lng": -60.674630}
+			],
+			"sensors": [6, 20, 114, 142]
+		}
+	</script>
+	<script type="text/javascript"> 
+		
+		// Data
+		const data = JSON.parse(document.getElementById('data').innerHTML);
+
+		// Mapa
+      	let map;
+		// Marcadores
+		let markers = [];
+		// Coordenadas de la línea
+		let polylineCoords = [];
+		// Línea
+		let polyline = null;
+		// Opciones
+		const options = {
+			zoom: 15.8,
+			center: { lat:-31.6090549, lng:-60.6706232 },
+		};
+
+		// URL de los íconos
+		const URL_MARKER = "http://drive.google.com/uc?export=view&id=1V512B0y9DUTuirxLa8JBSHoRNdhz63J9";
+		const URL_SENSOR = "http://drive.google.com/uc?export=view&id=12vuI92W0i0yO3PzjoOHKPUMemp1S9oeY"
+
+		// Función para inicializar el mapa
+		function initMap(){
+			// Creación del mapa
+			map = new google.maps.Map(document.getElementById('map'), options);
+			let icon;
+			data.nodes.forEach((node, index) => {
+				icon = data.sensors.includes(index) ? URL_SENSOR : URL_MARKER;
+				addMarker(node.lat, node.lng, icon);
+			});
+		}
+
+		// Función para agregar un mapa
+		function addMarker(lat, lng, icon){
+        	const latLng = new google.maps.LatLng(lat, lng);
+        	const marker = new google.maps.Marker({
+        		position: latLng,
+				icon: icon ? icon : undefined
+        	})
+        	marker.setMap(map);
+        	markers.push(marker);
+        }
+        
+		// Función para eliminar los marcadores
+        function deleteMarkers(){
+        	markers.forEach(marker => {
+				marker.setMap(null);
+			});
+			markers = [];
+        }
+        
+		// Agregar un nuevo punto a la polyline
+        function addPolyline(lat, lng){
+        	const latLng = new google.maps.LatLng(lat, lng);
+        	polylineCoords.push(latLng);
+			if (!polyline) {
+				polyline = new google.maps.Polyline({
+					path: polylineCoords,
+					strokeColor: '#FF0000',
+					strokeOpacity: 1.0,
+					strokeWeight: 2
+				});
+				polyline.setMap(map)
+			} else {
+				polyline.setPath(polylineCoords);
+			}
+        }
+        
+		// Eliminar la polyline
+        function removePolyLine(){
+        	polyline.setMap(null);
+        	polylineCoords = [];
+        }
+
+		// Para generar la polyline del recorrido
+		function setTravelPolyline(travel){
+			if (polylineCoords.length > 0) {
+				removePolyLine();
+			}
+			travel.forEach(t => {
+				addPolyline(data.nodes[t].lat, data.nodes[t].lng);
+			});
+		}
+
+	</script>
+ 
+	</body> 
+</html>
