@@ -213,8 +213,15 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
-		return null;
+		String str = " Ciudadanos infectados:  ";
+		for (Ciudadano ciudadano : ciudadanosInfectados) {
+			str += "(" + String.valueOf(ciudadano.getId()) + ", ";
+			str += String.valueOf(ciudadano.getPosicionActual()) + ", ";
+			str += String.valueOf(ciudadano.getPosicionResidencia()) + ") - ";
+		}
+		
+		
+		return str.toString();
 	}
 	
 	public ArrayList<Ciudadano> getCiudadanosInfectados(){

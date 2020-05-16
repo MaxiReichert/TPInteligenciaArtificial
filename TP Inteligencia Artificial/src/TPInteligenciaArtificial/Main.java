@@ -55,7 +55,6 @@ public class Main extends Application {
 		
 		Button btn= new Button("Avanzar");
 		
-		
 		hb2.getChildren().add(btn);
 		
 		lbDistanciaRecorrida= new Label();
@@ -118,8 +117,8 @@ public class Main extends Application {
 	
 	private Double[][] InicializarNodoCoordenada() {
 		Double[][] nodoCoordenada= {
-				{-31.615911, -60.672965},
-				{-31.615826, -60.673228},
+				{-31.615911, -60.672965}, //Alm. Brown y Pedro de vega
+				{-31.615826, -60.673228}, //Echague y pedro de vega
 				{-31.615559, -60.674329},
 				{-31.615344, -60.675402},
 				{-31.615143, -60.676413},
