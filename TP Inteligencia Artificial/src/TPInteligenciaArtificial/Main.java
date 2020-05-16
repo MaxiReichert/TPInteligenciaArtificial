@@ -94,7 +94,7 @@ public class Main extends Application {
 		
 				WebView webView= new WebView();
 				final WebEngine webEngine= webView.getEngine();
-				webEngine.load(getClass().getResource("maps.html").toExternalForm());
+				webEngine.load(getClass().getResource("map.html").toExternalForm());
 				
 				Double[][] nodoCoordenadas= InicializarNodoCoordenada();
 				
@@ -112,18 +112,7 @@ public class Main extends Application {
 	}
 
 	public static void main(String[] args) {
-		/*
-		// Test calcular distancia
-		DistanceTime distanceTime = new DistanceTime();
-		try {
-			Long[] calculate = distanceTime.calculate("-31.615911,-60.672965", "-31.615826,-60.673228");
-			System.out.println(calculate[0] + " " + calculate[1]);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		*/
 		launch(args);
-
 	}
 	
 	

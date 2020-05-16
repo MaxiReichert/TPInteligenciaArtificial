@@ -17,6 +17,19 @@ public class DistanceTime {
     public DistanceTime() {
 	}
 
+    
+    /*
+	 EL MÉTODO SE USA DE LA SIGUIENTE FORMA:
+	 Devuelve un arreglo con dos valores Long, el primero corresponde a la distancia en metros
+	 y el segundo al tiempo (en segundos).
+	 
+	DistanceTime distanceTime = new DistanceTime();
+	try {
+		Long[] calculate = distanceTime.calculate("-31.615911,-60.672965", "-31.615826,-60.673228");
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+	*/
 	public Long[] calculate(String source ,String destination) throws IOException {
 		String url = "https://maps.googleapis.com/maps/api/distancematrix/json?origins="
 					+ source + "&destinations=" + destination + "&key=" + API_KEY;
