@@ -25,8 +25,9 @@ public class AgenteCustodioEnvironment extends Environment {
 		
 		AgenteCustodioPerception percepcion1= new AgenteCustodioPerception();
 		percepcion1.setTipo(AgenteCustodioPerception.CORTE_NODO);
-		percepcion1.setNodoCortado(1);
-		percepciones.put(1, percepcion1);
+		percepcion1.setNodoCortado(15);
+		percepciones.put(3, percepcion1);
+		
 		
 		AgenteCustodioPerception percepcion6= new AgenteCustodioPerception();
 		percepcion6.setTipo(AgenteCustodioPerception.CAMBIO_POSICION_CIUDADANO);
