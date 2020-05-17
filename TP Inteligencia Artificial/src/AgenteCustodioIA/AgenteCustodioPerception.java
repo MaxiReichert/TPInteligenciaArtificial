@@ -1,5 +1,7 @@
 package AgenteCustodioIA;
 
+import java.util.HashMap;
+
 import frsf.cidisi.faia.agent.Agent;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
@@ -14,7 +16,7 @@ public class AgenteCustodioPerception extends Perception {
 	private int tipo;
 	private Ciudadano ciudadano;
 	private int nodoCortado;
-	private int nodoCongestionado;
+	private NodoCongestionado nodoCongestionado;
 	
 	
 	@Override
@@ -46,11 +48,11 @@ public class AgenteCustodioPerception extends Perception {
 		this.nodoCortado = nodoCortado;
 	}
 
-	public int getNodoCongestionado() {
+	public NodoCongestionado getNodoCongestionado() {
 		return nodoCongestionado;
 	}
 
-	public void setNodoCongestionado(int nodoCongestionado) {
+	public void setNodoCongestionado(NodoCongestionado nodoCongestionado) {
 		this.nodoCongestionado = nodoCongestionado;
 	}
 	
@@ -83,7 +85,8 @@ public class AgenteCustodioPerception extends Perception {
 			break;
 		case 3:
 			str.append("CONGESTION_NODO - ");
-			str.append("Nodo congestionado: " + String.valueOf(nodoCortado));
+			str.append("Nodo congestionado: [" + String.valueOf(nodoCongestionado.getNodo()) + ", " 
+												+ String.valueOf(nodoCongestionado.getEstado()) + "]");
 			break;
 		}
 

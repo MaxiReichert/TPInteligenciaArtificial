@@ -7,13 +7,13 @@ import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
 import frsf.cidisi.faia.state.AgentState;
 import frsf.cidisi.faia.state.EnvironmentState;
 
-public class Avanzar extends SearchAction {
+public class AvanzarConCongestion extends SearchAction {
 	
 	private int nodo;
-	private Double costo=1.0;
+	private Double costo=10.0;
 	private int distancia=100;
 	
-	public Avanzar(int nodo) {
+	public AvanzarConCongestion(int nodo) {
 		this.nodo=nodo;
 	}
 
@@ -23,13 +23,11 @@ public class Avanzar extends SearchAction {
 		
 		ArrayList<Integer> sucesores= new ArrayList<Integer>();
 		sucesores.addAll(agentState.getSucesores());
-		Boolean nodoCongestionado = agentState.getNodosCongestionados().get(nodo);
-		//verificamos si el nodo está congestionado y devolvemos null para evitar que se pueda usar la acción
-		if(sucesores !=null && !nodoCongestionado) {
+		Boolean nodoCongestionado = agentState.getNodosCongestionados().get(nodo); //si el nodo está congestionado se permite usar esta acción
+		if(sucesores !=null && nodoCongestionado) {
 			int index= sucesores.indexOf(nodo);
 			if(index >=0) {
 				agentState.setPosicion(nodo);
-				
 				
 				agentState.setCostoCamino(agentState.getCostoCamino()+this.costo);
 				agentState.setDistanciaRecorrida(agentState.getDistanciaRecorrida()+this.distancia);
@@ -54,7 +52,7 @@ public class Avanzar extends SearchAction {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Avanzar";
+		return "Avanzar por nodo congestionado";
 	}
 
 }

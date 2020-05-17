@@ -11,6 +11,7 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 
 	private HashMap<Integer, Collection<Integer>> mapa;
 	private ArrayList<Ciudadano> ciudadanosInfectados;
+	private HashMap<Integer, Boolean> nodosCongestionados;
 	
 	//terminar de completar con el resto de los nodos
 	public static final Integer[][] posiciones= new Integer [][] {
@@ -186,6 +187,8 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 		nuevoAmbiente.setMapa(mapa);
 		ArrayList<Ciudadano> ciudadanoInfectados= (ArrayList<Ciudadano>) ciudadanosInfectados.clone();
 		nuevoAmbiente.setCiudadanosInfectados(ciudadanoInfectados);
+		HashMap<Integer, Boolean> nodosCongestionadosClone =  (HashMap<Integer, Boolean>) nodosCongestionados.clone();
+		nuevoAmbiente.setNodosCongestionados(nodosCongestionadosClone);
 		return nuevoAmbiente;
 		
 	}
@@ -194,13 +197,18 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 	public void initState() {
 		
 		mapa= new HashMap<Integer, Collection<Integer>>();
+		nodosCongestionados = new HashMap<Integer, Boolean>();
+		
 		for(int i=0; i<posiciones.length; i++) {
 			ArrayList<Integer> sucesores= new ArrayList<Integer>();
 			for(int j=0; j<posiciones[i].length; j++){
 				sucesores.add(posiciones[i][j]);
 			}
 			mapa.put(i, sucesores);
+			nodosCongestionados.put(i, false);
 		}
+		
+		
 		
 		ciudadanosInfectados= new ArrayList<Ciudadano>();
 		ciudadanosInfectados.add(new Ciudadano(1,15,15));
@@ -219,8 +227,12 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 			str += String.valueOf(ciudadano.getPosicionActual()) + ", ";
 			str += String.valueOf(ciudadano.getPosicionResidencia()) + ") - ";
 		}
-		
-		str += "\n Mapa real: " + mapa.toString();
+		/*
+		str += "\n  Mapa real: " + mapa.toString();
+		for(int i=0; i<posiciones.length; i++) {
+			if(nodosCongestionados.get(i))
+		}*/
+		str += "\n  Nodos congestionados: " + nodosCongestionados.toString();
 		
 		
 		return str.toString();
@@ -240,6 +252,14 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 
 	public HashMap<Integer, Collection<Integer>> getMapa() {
 		return mapa;
+	}
+
+	public HashMap<Integer, Boolean> getNodosCongestionados() {
+		return nodosCongestionados;
+	}
+
+	public void setNodosCongestionados(HashMap<Integer, Boolean> nodosCongestionados) {
+		this.nodosCongestionados = nodosCongestionados;
 	}
 	
 	

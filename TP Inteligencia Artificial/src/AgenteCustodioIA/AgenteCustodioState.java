@@ -18,6 +18,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 	private ArrayList<Integer> recorrido;
 	private HashMap<Integer, Collection<Integer>> mapaConocido;
 	private ArrayList<Sensor> sensores;
+	private HashMap<Integer, Boolean> nodosCongestionados;
 	
 	public AgenteCustodioState() {
 		this.initState();
@@ -213,6 +214,11 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		sensores.add(new Sensor(20,false));
 		sensores.add(new Sensor(114,false));
 		sensores.add(new Sensor(142,false));
+		
+		nodosCongestionados = new HashMap<Integer, Boolean>();
+		for(int i=0; i<posiciones.length; i++) {
+			nodosCongestionados.put(i, false);
+		}
 	}
 	
 	@Override
@@ -222,19 +228,28 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		if(p!=null) {
 			AgenteCustodioPerception percepcion= (AgenteCustodioPerception) p;
 			switch(percepcion.getTipo()) {
-				case 0:
+				case 0: //CAMBIO_POSICION_CIUDADANO
 					ActualizarPosicionCiudadano(percepcion.getCiudadano());
 					break;
-				case 1:
+				case 1:	//NUEVO_CIUDADANO
 					ActualizarSensor(percepcion.getCiudadano());
 					break;
-				case 2: 
+				case 2: //CORTE_NODO
 					actualizarMapa(percepcion.getNodoCortado());
+					break;
+				case 3: //CONGESTION_NODO
+					actualizarNodosCongestionados(percepcion.getNodoCongestionado());
 			}
 		}
 		
 	}
 	
+
+	private void actualizarNodosCongestionados(NodoCongestionado nodoCongestionado) {
+		nodosCongestionados.put(nodoCongestionado.getNodo(), nodoCongestionado.getEstado());
+		
+	}
+
 	private void actualizarMapa(int nodoCortado) {
 		
 		//elimino los sucesores del nodoCortado
@@ -284,8 +299,10 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		nuevoEstado.setCiudadanosFugados(ciudadanoFugados);
 		nuevoEstado.setCostoCamino(costoCamino);
 		ArrayList<Integer> camino= (ArrayList<Integer>) recorrido.clone();
-		HashMap<Integer, Collection<Integer>> mapa = (HashMap<Integer, Collection<Integer>>) mapaConocido.clone();
-		nuevoEstado.setMapaConocido(mapa);
+		HashMap<Integer, Collection<Integer>> mapaClone = (HashMap<Integer, Collection<Integer>>) mapaConocido.clone();
+		nuevoEstado.setMapaConocido(mapaClone);
+		HashMap<Integer, Boolean> nodosCongestionadosClone = (HashMap<Integer, Boolean>) nodosCongestionados.clone();
+		nuevoEstado.setNodosCongestionados(nodosCongestionadosClone);
 		
 		return nuevoEstado;
 	}
@@ -363,7 +380,14 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		this.sensores = sensores;
 	}
 	
-	
+	public HashMap<Integer, Boolean> getNodosCongestionados() {
+		return nodosCongestionados;
+	}
+
+	public void setNodosCongestionados(HashMap<Integer, Boolean> nodosCongestionados) {
+		this.nodosCongestionados = nodosCongestionados;
+	}
+
 	@Override
 	public String toString() {
 		String agentState = "Nodo " + String.valueOf(this.posicion);
@@ -373,10 +397,13 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 			agentState += String.valueOf(nodo) + "-"; 
 		}
 		
-		agentState += "\n Mapa: " + mapaConocido.toString();
+		agentState += "\n  Costo camino: " + String.valueOf(costoCamino);
+		
+		agentState += "\n  Mapa: " + mapaConocido.toString();
+		
+		agentState += "\n  Nodos congestionados: " + nodosCongestionados.toString();
 
-
-		agentState += "\nCiudadanos fugados: ";
+		agentState += "\n  Ciudadanos fugados: ";
 		for (Ciudadano ciudadano : ciudadanosFugados) {
 			agentState += "(" + String.valueOf(ciudadano.getId()) + ", " 
 						+ String.valueOf(ciudadano.getPosicionActual()) + ", " 

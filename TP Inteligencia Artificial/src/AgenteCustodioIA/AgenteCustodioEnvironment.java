@@ -9,6 +9,7 @@ import java.util.logging.Logger;
 
 import com.sun.javafx.collections.MapAdapterChange;
 
+import frsf.cidisi.faia.agent.Action;
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.environment.Environment;
 
@@ -22,13 +23,25 @@ public class AgenteCustodioEnvironment extends Environment {
 		
 		percepciones= new HashMap<Integer, AgenteCustodioPerception>();
 		
+		//solo con esta congestion activada se elije otro camino y se evita el nodo
+		AgenteCustodioPerception percepcion2= new AgenteCustodioPerception();
+		percepcion2.setTipo(AgenteCustodioPerception.CONGESTION_NODO);
+		percepcion2.setNodoCongestionado(new NodoCongestionado(1, true));
+		percepciones.put(1, percepcion2);
+		/*
+		//con las dos congestiones activadas el nodo 18 siempre se usa por ser mas caro evitarlo
+		//y dependiendo del costo pasa o no por el nodo 1
+		AgenteCustodioPerception percepcion3= new AgenteCustodioPerception();
+		percepcion3.setTipo(AgenteCustodioPerception.CONGESTION_NODO);
+		percepcion3.setNodoCongestionado(new NodoCongestionado(18, true));
+		percepciones.put(2, percepcion3);
+		*/
 		
 		AgenteCustodioPerception percepcion1= new AgenteCustodioPerception();
 		percepcion1.setTipo(AgenteCustodioPerception.CORTE_NODO);
 		percepcion1.setNodoCortado(15);
 		percepciones.put(3, percepcion1);
-		
-		
+	
 		AgenteCustodioPerception percepcion6= new AgenteCustodioPerception();
 		percepcion6.setTipo(AgenteCustodioPerception.CAMBIO_POSICION_CIUDADANO);
 		percepcion6.setCiudadano(new Ciudadano(5,24,50));
@@ -56,10 +69,23 @@ public class AgenteCustodioEnvironment extends Environment {
 					break;
 				case 2: //CORTE_NODO
 					ambiente = actualizarMapa(ambiente, percepcion.getNodoCortado());
+					break;
+				case 3: //CONGESTION_NODO
+					ambiente = actualizarNodosCongestionados(ambiente, percepcion.getNodoCongestionado());
 			}
 			return percepcion;
 		}
 		return null;
+	}
+
+	private AgenteCustodioEnvironmentState actualizarNodosCongestionados(AgenteCustodioEnvironmentState ambiente,
+			NodoCongestionado nodoCongestionado) {
+		
+		HashMap<Integer, Boolean> nodosCongestionados = ambiente.getNodosCongestionados();
+		nodosCongestionados.put(nodoCongestionado.getNodo(), nodoCongestionado.getEstado());
+		ambiente.setNodosCongestionados(nodosCongestionados);
+		
+		return ambiente;
 	}
 
 	private AgenteCustodioEnvironmentState actualizarMapa(AgenteCustodioEnvironmentState ambiente, int nodoCortado) {
@@ -95,6 +121,12 @@ public class AgenteCustodioEnvironment extends Environment {
 		
 		return ambiente;
 		
+	}
+	
+	@Override
+	public boolean agentFailed(Action actionReturned) {
+		// TODO Auto-generated method stub
+		return super.agentFailed(actionReturned);
 	}
 	
 	@Override

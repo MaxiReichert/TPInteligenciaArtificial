@@ -2,6 +2,7 @@ package AgenteCustodioIA;
 
 import frsf.cidisi.faia.exceptions.PrologConnectorException;
 import frsf.cidisi.faia.simulator.SearchBasedAgentSimulator;
+import javafx.scene.web.WebEngine;
 
 public class AgenteCustodioMain {
 

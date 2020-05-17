@@ -28,7 +28,9 @@ public class AgenteCustodio extends SearchBasedAgent {
 		Vector<SearchAction> actions= new Vector<SearchAction>();
 		int cantNodos= agentState.getMapaConocido().size();
 		for(int i=0; i<cantNodos; i++) {
+			actions.addElement(new AvanzarConCongestion(i));
 			actions.addElement(new Avanzar(i));
+			
 		}
 		actions.addElement(new Multar());
 		
