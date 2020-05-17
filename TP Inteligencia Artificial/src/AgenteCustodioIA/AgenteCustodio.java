@@ -55,7 +55,7 @@ public class AgenteCustodio extends SearchBasedAgent {
 				UniformCostSearch uniformCostSearch= new UniformCostSearch(costo);
 				
 				Search uniformCostSearchSolver= new Search(uniformCostSearch);
-				uniformCostSearchSolver.setVisibleTree(Search.EFAIA_TREE);
+				uniformCostSearchSolver.setVisibleTree(Search.XML_TREE);
 				this.setSolver(uniformCostSearchSolver);
 				break;
 			
@@ -63,7 +63,7 @@ public class AgenteCustodio extends SearchBasedAgent {
 				BreathFirstSearch breathFirstSearch= new BreathFirstSearch();
 				
 				Search breathSearchSolver= new Search(breathFirstSearch);
-				breathSearchSolver.setVisibleTree(Search.EFAIA_TREE);
+				breathSearchSolver.setVisibleTree(Search.XML_TREE);
 				this.setSolver(breathSearchSolver);
 				break;
 				
@@ -71,7 +71,7 @@ public class AgenteCustodio extends SearchBasedAgent {
 				DepthFirstSearch depthFirstSearch= new DepthFirstSearch();
 				
 				Search depthSearchSolver= new Search(depthFirstSearch);
-				depthSearchSolver.setVisibleTree(Search.EFAIA_TREE);
+				depthSearchSolver.setVisibleTree(Search.XML_TREE);
 				this.setSolver(depthSearchSolver);
 				break;
 		}

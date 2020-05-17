@@ -216,16 +216,17 @@
 			let icon;
 			data.nodes.forEach((node, index) => {
 				icon = data.sensors.includes(index) ? URL_SENSOR : URL_MARKER;
-				addMarker(node.lat, node.lng, icon);
+				addMarker(node.lat, node.lng, index.toString(), icon);
 			});
 		}
 
 		// Función para agregar un mapa
-		function addMarker(lat, lng, icon){
+		function addMarker(lat, lng, label, icon){
         	const latLng = new google.maps.LatLng(lat, lng);
         	const marker = new google.maps.Marker({
         		position: latLng,
-				icon: icon ? icon : undefined
+				label, 
+				icon,
         	})
         	marker.setMap(map);
         	markers.push(marker);
