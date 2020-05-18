@@ -11,6 +11,8 @@ import frsf.cidisi.faia.agent.search.SearchAction;
 import frsf.cidisi.faia.agent.search.SearchBasedAgent;
 import frsf.cidisi.faia.solver.search.BreathFirstSearch;
 import frsf.cidisi.faia.solver.search.DepthFirstSearch;
+import frsf.cidisi.faia.solver.search.GreedySearch;
+import frsf.cidisi.faia.solver.search.IEstimatedCostFunction;
 import frsf.cidisi.faia.solver.search.IStepCostFunction;
 import frsf.cidisi.faia.solver.search.Search;
 import frsf.cidisi.faia.solver.search.UniformCostSearch;
@@ -76,6 +78,13 @@ public class AgenteCustodio extends SearchBasedAgent {
 				depthSearchSolver.setVisibleTree(Search.XML_TREE);
 				this.setSolver(depthSearchSolver);
 				break;
+				
+			case "Búsqueda informada":
+				IEstimatedCostFunction heuristic = new Heuristica();
+		        GreedySearch strategy = new GreedySearch(heuristic);
+		        Search estimatedSearchSolver= new Search(strategy);
+		        estimatedSearchSolver.setVisibleTree(Search.XML_TREE);
+		        this.setSolver(estimatedSearchSolver);
 		}
 		
 		Action selectedAction = null;

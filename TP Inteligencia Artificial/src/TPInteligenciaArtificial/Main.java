@@ -47,6 +47,7 @@ public class Main extends Application {
 		metodosBusqueda.getItems().add("Costo Uniforme");
 		metodosBusqueda.getItems().add("Profundidad");
 		metodosBusqueda.getItems().add("Amplitud");
+		metodosBusqueda.getItems().add("Búsqueda informada");
 		metodosBusqueda.setValue("Costo Uniforme");
 		
 		hb1.getChildren().add(lbMetodoBusqueda);
