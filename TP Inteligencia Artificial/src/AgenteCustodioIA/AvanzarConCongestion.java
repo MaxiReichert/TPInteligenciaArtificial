@@ -49,6 +49,10 @@ public class AvanzarConCongestion extends SearchAction {
 		return est;
 	}
 
+	public int getNodo() {
+		return nodo;
+	}
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub

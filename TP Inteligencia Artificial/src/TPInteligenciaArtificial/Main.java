@@ -28,6 +28,7 @@ public class Main extends Application {
 	Label lbCostoRecorrido;
 	AgenteCustodioState agentState;
 	WebEngine webEngine;
+
 	
 	@Override
 	public void start(Stage stage) throws Exception {	
@@ -47,7 +48,8 @@ public class Main extends Application {
 		metodosBusqueda.getItems().add("Costo Uniforme");
 		metodosBusqueda.getItems().add("Profundidad");
 		metodosBusqueda.getItems().add("Amplitud");
-		metodosBusqueda.setValue("Costo Uniforme");
+		metodosBusqueda.getItems().add("Búsqueda informada");
+		
 		
 		hb1.getChildren().add(lbMetodoBusqueda);
 		hb1.getChildren().add(metodosBusqueda);

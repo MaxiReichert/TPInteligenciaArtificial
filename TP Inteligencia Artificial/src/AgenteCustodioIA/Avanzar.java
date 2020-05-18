@@ -57,4 +57,8 @@ public class Avanzar extends SearchAction {
 		return "Avanzar";
 	}
 
+	public Integer getNodo() {
+		return nodo;
+	}
+
 }

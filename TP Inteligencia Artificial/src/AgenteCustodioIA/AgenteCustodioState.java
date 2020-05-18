@@ -8,6 +8,7 @@ import java.util.HashMap;
 
 import frsf.cidisi.faia.agent.Perception;
 import frsf.cidisi.faia.agent.search.SearchBasedAgentState;
+import javafx.scene.web.WebView;
 
 public class AgenteCustodioState extends SearchBasedAgentState {
 
@@ -345,6 +346,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 	
 	public void setRecorrido(ArrayList<Integer> recorrido) {
 		this.recorrido=recorrido;
+		
 	}
 
 
@@ -401,7 +403,11 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		
 		agentState += "\n  Mapa: " + mapaConocido.toString();
 		
-		agentState += "\n  Nodos congestionados: " + nodosCongestionados.toString();
+		agentState += "\n  Nodos congestionados: ";
+		for(int i=0; i<nodosCongestionados.size(); i++) {
+			if(nodosCongestionados.get(i))
+			agentState += nodosCongestionados.toString() + " ";
+		}
 
 		agentState += "\n  Ciudadanos fugados: ";
 		for (Ciudadano ciudadano : ciudadanosFugados) {

@@ -227,14 +227,7 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 			str += String.valueOf(ciudadano.getPosicionActual()) + ", ";
 			str += String.valueOf(ciudadano.getPosicionResidencia()) + ") - ";
 		}
-		/*
-		str += "\n  Mapa real: " + mapa.toString();
-		for(int i=0; i<posiciones.length; i++) {
-			if(nodosCongestionados.get(i))
-		}*/
-		str += "\n  Nodos congestionados: " + nodosCongestionados.toString();
-		
-		
+	
 		return str.toString();
 	}
 	
