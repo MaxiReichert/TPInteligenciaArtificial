@@ -1,0 +1,616 @@
+<tree id="10" edgedefault="directed">
+<node Id="0" Action="null" Cost="0.0" Estado_Agente="Nodo 23 - Recorrido: 
+  Costo camino: 10.0"/>
+<node Id="1" Action="Avanzar 14" Cost="0.0" Estado_Agente="Nodo 14 - Recorrido: 
+  Costo camino: 10.0"/>
+<node Id="2" Action="Avanzar 23" Cost="0.0" Estado_Agente="Nodo 23 - Recorrido: 
+  Costo camino: 10.0"/>
+<node Id="3" Action="Avanzar 3" Cost="0.0" Estado_Agente="Nodo 3 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="4" Action="Avanzar 15" Cost="0.0" Estado_Agente="Nodo 15 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="8" Action="Avanzar 4" Cost="0.0" Estado_Agente="Nodo 4 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="19" Action="Avanzar 5" Cost="0.0" Estado_Agente="Nodo 5 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="40" Action="Avanzar 6" Cost="0.0" Estado_Agente="Nodo 6 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="75" Action="Avanzar 11" Cost="0.0" Estado_Agente="Nodo 11 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="136" Action="Avanzar 12" Cost="0.0" Estado_Agente="Nodo 12 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="137" Action="Avanzar 25" Cost="0.0" Estado_Agente="Nodo 25 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="9" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="10" Action="Avanzar 21" Cost="0.0" Estado_Agente="Nodo 21 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="20" Action="Avanzar 1" Cost="0.0" Estado_Agente="Nodo 1 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="21" Action="Avanzar 17" Cost="0.0" Estado_Agente="Nodo 17 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="41" Action="Avanzar 2" Cost="0.0" Estado_Agente="Nodo 2 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="76" Action="Avanzar 3" Cost="0.0" Estado_Agente="Nodo 3 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="138" Action="Avanzar 4" Cost="0.0" Estado_Agente="Nodo 4 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="42" Action="Avanzar 0" Cost="0.0" Estado_Agente="Nodo 0 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="43" Action="Avanzar 18" Cost="0.0" Estado_Agente="Nodo 18 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="77" Action="Avanzar 1" Cost="0.0" Estado_Agente="Nodo 1 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="139" Action="Avanzar 2" Cost="0.0" Estado_Agente="Nodo 2 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="78" Action="Avanzar 19" Cost="0.0" Estado_Agente="Nodo 19 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="79" Action="Avanzar 37" Cost="0.0" Estado_Agente="Nodo 37 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="140" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="141" Action="Avanzar 35" Cost="0.0" Estado_Agente="Nodo 35 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="142" Action="Avanzar 52" Cost="0.0" Estado_Agente="Nodo 52 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="22" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="23" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="24" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="44" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="45" Action="Avanzar 19" Cost="0.0" Estado_Agente="Nodo 19 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="80" Action="Avanzar 1" Cost="0.0" Estado_Agente="Nodo 1 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="81" Action="Avanzar 17" Cost="0.0" Estado_Agente="Nodo 17 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="143" Action="Avanzar 2" Cost="0.0" Estado_Agente="Nodo 2 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="144" Action="Avanzar 0" Cost="0.0" Estado_Agente="Nodo 0 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="145" Action="Avanzar 18" Cost="0.0" Estado_Agente="Nodo 18 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="82" Action="Avanzar 18" Cost="0.0" Estado_Agente="Nodo 18 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="83" Action="Avanzar 35" Cost="0.0" Estado_Agente="Nodo 35 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="146" Action="Avanzar 17" Cost="0.0" Estado_Agente="Nodo 17 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="147" Action="Avanzar 37" Cost="0.0" Estado_Agente="Nodo 37 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="148" Action="Avanzar 36" Cost="0.0" Estado_Agente="Nodo 36 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="149" Action="Avanzar 50" Cost="0.0" Estado_Agente="Nodo 50 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="46" Action="Avanzar 23" Cost="0.0" Estado_Agente="Nodo 23 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="84" Action="Avanzar 24" Cost="0.0" Estado_Agente="Nodo 24 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="85" Action="Avanzar 31" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="150" Action="Avanzar 12" Cost="0.0" Estado_Agente="Nodo 12 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="151" Action="Avanzar 25" Cost="0.0" Estado_Agente="Nodo 25 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="152" Action="Multar" Cost="0.0" Estado_Agente="Nodo 24 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="153" Action="Avanzar 32" Cost="0.0" Estado_Agente="Nodo 32 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="154" Action="Avanzar 41" Cost="0.0" Estado_Agente="Nodo 41 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="155" Action="Multar" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="47" Action="Avanzar 34" Cost="0.0" Estado_Agente="Nodo 34 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="48" Action="Avanzar 39" Cost="0.0" Estado_Agente="Nodo 39 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="86" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="87" Action="Avanzar 35" Cost="0.0" Estado_Agente="Nodo 35 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="156" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="157" Action="Avanzar 19" Cost="0.0" Estado_Agente="Nodo 19 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="158" Action="Avanzar 36" Cost="0.0" Estado_Agente="Nodo 36 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="159" Action="Avanzar 50" Cost="0.0" Estado_Agente="Nodo 50 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="88" Action="Avanzar 48" Cost="0.0" Estado_Agente="Nodo 48 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="160" Action="Avanzar 47" Cost="0.0" Estado_Agente="Nodo 47 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="161" Action="Avanzar 59" Cost="0.0" Estado_Agente="Nodo 59 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="5" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="6" Action="Avanzar 24" Cost="0.0" Estado_Agente="Nodo 24 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="7" Action="Avanzar 31" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="11" Action="Avanzar 14" Cost="0.0" Estado_Agente="Nodo 14 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="12" Action="Avanzar 21" Cost="0.0" Estado_Agente="Nodo 21 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="25" Action="Avanzar 3" Cost="0.0" Estado_Agente="Nodo 3 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="26" Action="Avanzar 15" Cost="0.0" Estado_Agente="Nodo 15 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="49" Action="Avanzar 4" Cost="0.0" Estado_Agente="Nodo 4 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="89" Action="Avanzar 5" Cost="0.0" Estado_Agente="Nodo 5 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="162" Action="Avanzar 6" Cost="0.0" Estado_Agente="Nodo 6 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="50" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="51" Action="Avanzar 21" Cost="0.0" Estado_Agente="Nodo 21 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="90" Action="Avanzar 1" Cost="0.0" Estado_Agente="Nodo 1 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="91" Action="Avanzar 17" Cost="0.0" Estado_Agente="Nodo 17 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="163" Action="Avanzar 2" Cost="0.0" Estado_Agente="Nodo 2 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="164" Action="Avanzar 0" Cost="0.0" Estado_Agente="Nodo 0 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="165" Action="Avanzar 18" Cost="0.0" Estado_Agente="Nodo 18 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="92" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="93" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="166" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="167" Action="Avanzar 19" Cost="0.0" Estado_Agente="Nodo 19 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="168" Action="Avanzar 34" Cost="0.0" Estado_Agente="Nodo 34 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="169" Action="Avanzar 39" Cost="0.0" Estado_Agente="Nodo 39 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="27" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="28" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="52" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="53" Action="Avanzar 19" Cost="0.0" Estado_Agente="Nodo 19 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="94" Action="Avanzar 1" Cost="0.0" Estado_Agente="Nodo 1 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="95" Action="Avanzar 17" Cost="0.0" Estado_Agente="Nodo 17 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="170" Action="Avanzar 2" Cost="0.0" Estado_Agente="Nodo 2 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="171" Action="Avanzar 0" Cost="0.0" Estado_Agente="Nodo 0 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="172" Action="Avanzar 18" Cost="0.0" Estado_Agente="Nodo 18 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="96" Action="Avanzar 18" Cost="0.0" Estado_Agente="Nodo 18 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="97" Action="Avanzar 35" Cost="0.0" Estado_Agente="Nodo 35 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="173" Action="Avanzar 17" Cost="0.0" Estado_Agente="Nodo 17 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="174" Action="Avanzar 37" Cost="0.0" Estado_Agente="Nodo 37 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="175" Action="Avanzar 36" Cost="0.0" Estado_Agente="Nodo 36 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="176" Action="Avanzar 50" Cost="0.0" Estado_Agente="Nodo 50 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="54" Action="Avanzar 34" Cost="0.0" Estado_Agente="Nodo 34 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="55" Action="Avanzar 39" Cost="0.0" Estado_Agente="Nodo 39 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="98" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="99" Action="Avanzar 35" Cost="0.0" Estado_Agente="Nodo 35 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="177" Action="Avanzar 16" Cost="0.0" Estado_Agente="Nodo 16 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="178" Action="Avanzar 19" Cost="0.0" Estado_Agente="Nodo 19 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="179" Action="Avanzar 36" Cost="0.0" Estado_Agente="Nodo 36 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="180" Action="Avanzar 50" Cost="0.0" Estado_Agente="Nodo 50 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="100" Action="Avanzar 48" Cost="0.0" Estado_Agente="Nodo 48 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="181" Action="Avanzar 47" Cost="0.0" Estado_Agente="Nodo 47 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="182" Action="Avanzar 59" Cost="0.0" Estado_Agente="Nodo 59 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="13" Action="Avanzar 12" Cost="0.0" Estado_Agente="Nodo 12 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="14" Action="Avanzar 25" Cost="0.0" Estado_Agente="Nodo 25 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="15" Action="Multar" Cost="0.0" Estado_Agente="Nodo 24 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="29" Action="Avanzar 5" Cost="0.0" Estado_Agente="Nodo 5 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="56" Action="Avanzar 6" Cost="0.0" Estado_Agente="Nodo 6 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="101" Action="Avanzar 11" Cost="0.0" Estado_Agente="Nodo 11 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="183" Action="Avanzar 25" Cost="0.0" Estado_Agente="Nodo 25 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="30" Action="Avanzar 26" Cost="0.0" Estado_Agente="Nodo 26 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="31" Action="Avanzar 29" Cost="0.0" Estado_Agente="Nodo 29 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="57" Action="Avanzar 27" Cost="0.0" Estado_Agente="Nodo 27 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="102" Action="Avanzar 8" Cost="0.0" Estado_Agente="Nodo 8 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="103" Action="Avanzar 28" Cost="0.0" Estado_Agente="Nodo 28 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="184" Action="Avanzar 9" Cost="0.0" Estado_Agente="Nodo 9 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="185" Action="Avanzar 43" Cost="0.0" Estado_Agente="Nodo 43 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="58" Action="Avanzar 30" Cost="0.0" Estado_Agente="Nodo 30 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="59" Action="Avanzar 44" Cost="0.0" Estado_Agente="Nodo 44 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="104" Action="Avanzar 31" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="186" Action="Avanzar 32" Cost="0.0" Estado_Agente="Nodo 32 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="187" Action="Avanzar 41" Cost="0.0" Estado_Agente="Nodo 41 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="188" Action="Multar" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="105" Action="Avanzar 43" Cost="0.0" Estado_Agente="Nodo 43 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="106" Action="Avanzar 63" Cost="0.0" Estado_Agente="Nodo 63 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="189" Action="Avanzar 28" Cost="0.0" Estado_Agente="Nodo 28 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="190" Action="Avanzar 64" Cost="0.0" Estado_Agente="Nodo 64 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="191" Action="Avanzar 62" Cost="0.0" Estado_Agente="Nodo 62 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="192" Action="Avanzar 66" Cost="0.0" Estado_Agente="Nodo 66 - Recorrido: 
+  Costo camino: 16.0"/>
+<node Id="32" Action="Avanzar 12" Cost="0.0" Estado_Agente="Nodo 12 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="33" Action="Avanzar 23" Cost="0.0" Estado_Agente="Nodo 23 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="34" Action="Avanzar 25" Cost="0.0" Estado_Agente="Nodo 25 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="60" Action="Avanzar 5" Cost="0.0" Estado_Agente="Nodo 5 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="61" Action="Avanzar 13" Cost="0.0" Estado_Agente="Nodo 13 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="107" Action="Avanzar 6" Cost="0.0" Estado_Agente="Nodo 6 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="193" Action="Avanzar 11" Cost="0.0" Estado_Agente="Nodo 11 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="108" Action="Avanzar 14" Cost="0.0" Estado_Agente="Nodo 14 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="109" Action="Avanzar 23" Cost="0.0" Estado_Agente="Nodo 23 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="194" Action="Avanzar 3" Cost="0.0" Estado_Agente="Nodo 3 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="195" Action="Avanzar 15" Cost="0.0" Estado_Agente="Nodo 15 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="196" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="197" Action="Avanzar 31" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="62" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="63" Action="Avanzar 31" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="110" Action="Avanzar 14" Cost="0.0" Estado_Agente="Nodo 14 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="111" Action="Avanzar 21" Cost="0.0" Estado_Agente="Nodo 21 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="198" Action="Avanzar 3" Cost="0.0" Estado_Agente="Nodo 3 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="199" Action="Avanzar 15" Cost="0.0" Estado_Agente="Nodo 15 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="200" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="201" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="112" Action="Avanzar 32" Cost="0.0" Estado_Agente="Nodo 32 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="113" Action="Avanzar 41" Cost="0.0" Estado_Agente="Nodo 41 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="114" Action="Multar" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="202" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="203" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="204" Action="Avanzar 46" Cost="0.0" Estado_Agente="Nodo 46 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="64" Action="Avanzar 26" Cost="0.0" Estado_Agente="Nodo 26 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="65" Action="Avanzar 29" Cost="0.0" Estado_Agente="Nodo 29 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="115" Action="Avanzar 27" Cost="0.0" Estado_Agente="Nodo 27 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="116" Action="Avanzar 30" Cost="0.0" Estado_Agente="Nodo 30 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="117" Action="Avanzar 44" Cost="0.0" Estado_Agente="Nodo 44 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="16" Action="Avanzar 32" Cost="0.0" Estado_Agente="Nodo 32 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="17" Action="Avanzar 41" Cost="0.0" Estado_Agente="Nodo 41 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="18" Action="Multar" Cost="0.0" Estado_Agente="Nodo 31 - Recorrido: 
+  Costo camino: 11.0"/>
+<node Id="35" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="36" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="66" Action="Avanzar 14" Cost="0.0" Estado_Agente="Nodo 14 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="67" Action="Avanzar 21" Cost="0.0" Estado_Agente="Nodo 21 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="118" Action="Avanzar 3" Cost="0.0" Estado_Agente="Nodo 3 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="119" Action="Avanzar 15" Cost="0.0" Estado_Agente="Nodo 15 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="120" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="121" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="68" Action="Avanzar 34" Cost="0.0" Estado_Agente="Nodo 34 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="69" Action="Avanzar 39" Cost="0.0" Estado_Agente="Nodo 39 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="122" Action="Avanzar 20" Cost="0.0" Estado_Agente="Nodo 20 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="123" Action="Avanzar 35" Cost="0.0" Estado_Agente="Nodo 35 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="124" Action="Avanzar 48" Cost="0.0" Estado_Agente="Nodo 48 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="37" Action="Avanzar 46" Cost="0.0" Estado_Agente="Nodo 46 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="70" Action="Avanzar 45" Cost="0.0" Estado_Agente="Nodo 45 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="71" Action="Avanzar 61" Cost="0.0" Estado_Agente="Nodo 61 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="125" Action="Avanzar 42" Cost="0.0" Estado_Agente="Nodo 42 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="126" Action="Avanzar 44" Cost="0.0" Estado_Agente="Nodo 44 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="127" Action="Avanzar 60" Cost="0.0" Estado_Agente="Nodo 60 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="128" Action="Avanzar 68" Cost="0.0" Estado_Agente="Nodo 68 - Recorrido: 
+  Costo camino: 15.0"/>
+<node Id="38" Action="Avanzar 32" Cost="0.0" Estado_Agente="Nodo 32 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="39" Action="Avanzar 41" Cost="0.0" Estado_Agente="Nodo 41 - Recorrido: 
+  Costo camino: 12.0"/>
+<node Id="72" Action="Avanzar 22" Cost="0.0" Estado_Agente="Nodo 22 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="73" Action="Avanzar 33" Cost="0.0" Estado_Agente="Nodo 33 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="129" Action="Avanzar 14" Cost="0.0" Estado_Agente="Nodo 14 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="130" Action="Avanzar 21" Cost="0.0" Estado_Agente="Nodo 21 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="131" Action="Avanzar 23" Cost="0.0" Estado_Agente="Nodo 23 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="132" Action="Avanzar 34" Cost="0.0" Estado_Agente="Nodo 34 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="133" Action="Avanzar 39" Cost="0.0" Estado_Agente="Nodo 39 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="74" Action="Avanzar 46" Cost="0.0" Estado_Agente="Nodo 46 - Recorrido: 
+  Costo camino: 13.0"/>
+<node Id="134" Action="Avanzar 45" Cost="0.0" Estado_Agente="Nodo 45 - Recorrido: 
+  Costo camino: 14.0"/>
+<node Id="135" Action="Avanzar 61" Cost="0.0" Estado_Agente="Nodo 61 - Recorrido: 
+  Costo camino: 14.0"/>
+<edge source="0" target="1"/>
+<edge source="0" target="2"/>
+<edge source="1" target="3"/>
+<edge source="1" target="4"/>
+<edge source="2" target="5"/>
+<edge source="2" target="6"/>
+<edge source="2" target="7"/>
+<edge source="3" target="8"/>
+<edge source="4" target="9"/>
+<edge source="4" target="10"/>
+<edge source="8" target="19"/>
+<edge source="19" target="40"/>
+<edge source="40" target="75"/>
+<edge source="75" target="136"/>
+<edge source="75" target="137"/>
+<edge source="9" target="20"/>
+<edge source="9" target="21"/>
+<edge source="10" target="22"/>
+<edge source="10" target="23"/>
+<edge source="10" target="24"/>
+<edge source="20" target="41"/>
+<edge source="21" target="42"/>
+<edge source="21" target="43"/>
+<edge source="41" target="76"/>
+<edge source="76" target="138"/>
+<edge source="42" target="77"/>
+<edge source="43" target="78"/>
+<edge source="43" target="79"/>
+<edge source="77" target="139"/>
+<edge source="78" target="140"/>
+<edge source="78" target="141"/>
+<edge source="79" target="142"/>
+<edge source="22" target="44"/>
+<edge source="22" target="45"/>
+<edge source="23" target="46"/>
+<edge source="24" target="47"/>
+<edge source="24" target="48"/>
+<edge source="44" target="80"/>
+<edge source="44" target="81"/>
+<edge source="45" target="82"/>
+<edge source="45" target="83"/>
+<edge source="80" target="143"/>
+<edge source="81" target="144"/>
+<edge source="81" target="145"/>
+<edge source="82" target="146"/>
+<edge source="82" target="147"/>
+<edge source="83" target="148"/>
+<edge source="83" target="149"/>
+<edge source="46" target="84"/>
+<edge source="46" target="85"/>
+<edge source="84" target="150"/>
+<edge source="84" target="151"/>
+<edge source="84" target="152"/>
+<edge source="85" target="153"/>
+<edge source="85" target="154"/>
+<edge source="85" target="155"/>
+<edge source="47" target="86"/>
+<edge source="47" target="87"/>
+<edge source="48" target="88"/>
+<edge source="86" target="156"/>
+<edge source="86" target="157"/>
+<edge source="87" target="158"/>
+<edge source="87" target="159"/>
+<edge source="88" target="160"/>
+<edge source="88" target="161"/>
+<edge source="5" target="11"/>
+<edge source="5" target="12"/>
+<edge source="6" target="13"/>
+<edge source="6" target="14"/>
+<edge source="6" target="15"/>
+<edge source="7" target="16"/>
+<edge source="7" target="17"/>
+<edge source="7" target="18"/>
+<edge source="11" target="25"/>
+<edge source="11" target="26"/>
+<edge source="12" target="27"/>
+<edge source="12" target="28"/>
+<edge source="25" target="49"/>
+<edge source="26" target="50"/>
+<edge source="26" target="51"/>
+<edge source="49" target="89"/>
+<edge source="89" target="162"/>
+<edge source="50" target="90"/>
+<edge source="50" target="91"/>
+<edge source="51" target="92"/>
+<edge source="51" target="93"/>
+<edge source="90" target="163"/>
+<edge source="91" target="164"/>
+<edge source="91" target="165"/>
+<edge source="92" target="166"/>
+<edge source="92" target="167"/>
+<edge source="93" target="168"/>
+<edge source="93" target="169"/>
+<edge source="27" target="52"/>
+<edge source="27" target="53"/>
+<edge source="28" target="54"/>
+<edge source="28" target="55"/>
+<edge source="52" target="94"/>
+<edge source="52" target="95"/>
+<edge source="53" target="96"/>
+<edge source="53" target="97"/>
+<edge source="94" target="170"/>
+<edge source="95" target="171"/>
+<edge source="95" target="172"/>
+<edge source="96" target="173"/>
+<edge source="96" target="174"/>
+<edge source="97" target="175"/>
+<edge source="97" target="176"/>
+<edge source="54" target="98"/>
+<edge source="54" target="99"/>
+<edge source="55" target="100"/>
+<edge source="98" target="177"/>
+<edge source="98" target="178"/>
+<edge source="99" target="179"/>
+<edge source="99" target="180"/>
+<edge source="100" target="181"/>
+<edge source="100" target="182"/>
+<edge source="13" target="29"/>
+<edge source="14" target="30"/>
+<edge source="14" target="31"/>
+<edge source="15" target="32"/>
+<edge source="15" target="33"/>
+<edge source="15" target="34"/>
+<edge source="29" target="56"/>
+<edge source="56" target="101"/>
+<edge source="101" target="183"/>
+<edge source="30" target="57"/>
+<edge source="31" target="58"/>
+<edge source="31" target="59"/>
+<edge source="57" target="102"/>
+<edge source="57" target="103"/>
+<edge source="102" target="184"/>
+<edge source="103" target="185"/>
+<edge source="58" target="104"/>
+<edge source="59" target="105"/>
+<edge source="59" target="106"/>
+<edge source="104" target="186"/>
+<edge source="104" target="187"/>
+<edge source="104" target="188"/>
+<edge source="105" target="189"/>
+<edge source="105" target="190"/>
+<edge source="106" target="191"/>
+<edge source="106" target="192"/>
+<edge source="32" target="60"/>
+<edge source="32" target="61"/>
+<edge source="33" target="62"/>
+<edge source="33" target="63"/>
+<edge source="34" target="64"/>
+<edge source="34" target="65"/>
+<edge source="60" target="107"/>
+<edge source="61" target="108"/>
+<edge source="61" target="109"/>
+<edge source="107" target="193"/>
+<edge source="108" target="194"/>
+<edge source="108" target="195"/>
+<edge source="109" target="196"/>
+<edge source="109" target="197"/>
+<edge source="62" target="110"/>
+<edge source="62" target="111"/>
+<edge source="63" target="112"/>
+<edge source="63" target="113"/>
+<edge source="63" target="114"/>
+<edge source="110" target="198"/>
+<edge source="110" target="199"/>
+<edge source="111" target="200"/>
+<edge source="111" target="201"/>
+<edge source="112" target="202"/>
+<edge source="112" target="203"/>
+<edge source="113" target="204"/>
+<edge source="64" target="115"/>
+<edge source="65" target="116"/>
+<edge source="65" target="117"/>
+<edge source="16" target="35"/>
+<edge source="16" target="36"/>
+<edge source="17" target="37"/>
+<edge source="18" target="38"/>
+<edge source="18" target="39"/>
+<edge source="35" target="66"/>
+<edge source="35" target="67"/>
+<edge source="36" target="68"/>
+<edge source="36" target="69"/>
+<edge source="66" target="118"/>
+<edge source="66" target="119"/>
+<edge source="67" target="120"/>
+<edge source="67" target="121"/>
+<edge source="68" target="122"/>
+<edge source="68" target="123"/>
+<edge source="69" target="124"/>
+<edge source="37" target="70"/>
+<edge source="37" target="71"/>
+<edge source="70" target="125"/>
+<edge source="70" target="126"/>
+<edge source="71" target="127"/>
+<edge source="71" target="128"/>
+<edge source="38" target="72"/>
+<edge source="38" target="73"/>
+<edge source="39" target="74"/>
+<edge source="72" target="129"/>
+<edge source="72" target="130"/>
+<edge source="72" target="131"/>
+<edge source="73" target="132"/>
+<edge source="73" target="133"/>
+<edge source="74" target="134"/>
+<edge source="74" target="135"/>
+</tree>

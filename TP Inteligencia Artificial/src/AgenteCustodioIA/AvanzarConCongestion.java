@@ -56,7 +56,7 @@ public class AvanzarConCongestion extends SearchAction {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Avanzar por nodo congestionado";
+		return "Avanzar por nodo congestionado " + nodo;
 	}
 
 }

@@ -24,10 +24,12 @@ public class AgenteCustodioEnvironment extends Environment {
 		percepciones= new HashMap<Integer, AgenteCustodioPerception>();
 		
 		//solo con esta congestion activada se elije otro camino y se evita el nodo
+		/*
 		AgenteCustodioPerception percepcion2= new AgenteCustodioPerception();
 		percepcion2.setTipo(AgenteCustodioPerception.CONGESTION_NODO);
 		percepcion2.setNodoCongestionado(new NodoCongestionado(1, true));
 		percepciones.put(1, percepcion2);
+		*/
 		/*
 		//con las dos congestiones activadas el nodo 18 siempre se usa por ser mas caro evitarlo
 		//y dependiendo del costo pasa o no por el nodo 1
@@ -36,11 +38,12 @@ public class AgenteCustodioEnvironment extends Environment {
 		percepcion3.setNodoCongestionado(new NodoCongestionado(18, true));
 		percepciones.put(2, percepcion3);
 		*/
-		
+		/*
 		AgenteCustodioPerception percepcion1= new AgenteCustodioPerception();
 		percepcion1.setTipo(AgenteCustodioPerception.CORTE_NODO);
 		percepcion1.setNodoCortado(15);
 		percepciones.put(3, percepcion1);
+		*/
 	
 		AgenteCustodioPerception percepcion6= new AgenteCustodioPerception();
 		percepcion6.setTipo(AgenteCustodioPerception.CAMBIO_POSICION_CIUDADANO);

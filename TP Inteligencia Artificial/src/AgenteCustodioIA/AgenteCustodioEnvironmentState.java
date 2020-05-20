@@ -219,8 +219,10 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 		
 	}
 
+	
 	@Override
 	public String toString() {
+		return null;/*
 		String str = " Ciudadanos infectados:  ";
 		for (Ciudadano ciudadano : ciudadanosInfectados) {
 			str += "(" + String.valueOf(ciudadano.getId()) + ", ";
@@ -228,8 +230,9 @@ public class AgenteCustodioEnvironmentState extends EnvironmentState{
 			str += String.valueOf(ciudadano.getPosicionResidencia()) + ") - ";
 		}
 	
-		return str.toString();
+		return str.toString();*/
 	}
+	
 	
 	public ArrayList<Ciudadano> getCiudadanosInfectados(){
 		return ciudadanosInfectados;

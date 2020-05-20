@@ -54,7 +54,7 @@ public class Avanzar extends SearchAction {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Avanzar";
+		return "Avanzar " + nodo;
 	}
 
 	public Integer getNodo() {

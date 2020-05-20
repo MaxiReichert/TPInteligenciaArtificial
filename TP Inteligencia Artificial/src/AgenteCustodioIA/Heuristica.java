@@ -20,8 +20,7 @@ public class Heuristica implements IEstimatedCostFunction{
 	@Override
 	public double getEstimatedCost(NTree node) {
 		//DistanceTime distanceTime = new DistanceTime();
-		//calculamos la distancia en linea recta entre el nodo que se quiere calcular 
-		//y la posicion del fugado más cercano a la posición del agente
+		
 		
 		Integer nodoACalcular=null;
 		SearchAction var = node.getAction();
@@ -38,44 +37,16 @@ public class Heuristica implements IEstimatedCostFunction{
 		Double x1 = coordenadas[nodoACalcular][0];
 		Double y1 = coordenadas[nodoACalcular][1];
 		
-		//////Calculo el fugado más cercano a la posición actual del agente en linea recta///////
+		
 		int nodoPosAgente = ((AgenteCustodioState)node.getAgentState()).getPosicion();
 		Double x3 = coordenadas[nodoPosAgente][0];
 		Double y3 = coordenadas[nodoPosAgente][1];
 		
-		ArrayList<Ciudadano> ciudadanosFugados = ((AgenteCustodioState)node.getAgentState()).getCiudadanosFugados();
+
 		
-		if(ciudadanosFugados.isEmpty())
-			return 0.0;
+		Double distanciaEntreAgenteYNodoACalcular = Math.sqrt(Math.pow(x3-x1, 2) + (Math.pow(y3-y1, 2)));
 		
-		HashMap<Double, Ciudadano> distanciasYCiudadanos = new HashMap<Double, Ciudadano>();
-		ArrayList<Double> distancias = new ArrayList<Double>();
-		for (Ciudadano ciudadano : ciudadanosFugados) {
-			Integer nodoDestino= ciudadano.getPosicionActual();
-			Double x2 = coordenadas[nodoDestino][0];
-			Double y2 = coordenadas[nodoDestino][1];
-			Double distancia = Math.sqrt(Math.pow(x3-x2, 2) + (Math.pow(y3-y2, 2)));
-			distanciasYCiudadanos.put(distancia, ciudadano);
-			distancias.add(distancia);
-		}
-	
-		//ordeno de menor a mayor 
-		Collections.sort(distancias);
-		//obtengo la menor distancia
-		Double menorDistancia = distancias.get(0);
-		//uso esa menorDistancia como key para saber a que ciudadano fugado pertenece
-		Ciudadano fugadoMasCercaAlAgente = distanciasYCiudadanos.get(menorDistancia);
-		//devuelvo la distancia en linea recta al ciudadano fugado más cercano
-		////////////////////////////////////////////////////////////////////////////////////////////
-		
-		//obtengo las coordenadas del ciudadano
-		int nodoActualFugado = fugadoMasCercaAlAgente.getPosicionActual();
-		Double x4 = coordenadas[nodoActualFugado][0];
-		Double y4 = coordenadas[nodoActualFugado][1];
-		
-		Double distanciaEntreFugadoYNodoACalcular = Math.sqrt(Math.pow(x4-x1, 2) + (Math.pow(y4-y1, 2)));
-		
-		return distanciaEntreFugadoYNodoACalcular;
+		return distanciaEntreAgenteYNodoACalcular;
 	}
 	
 	

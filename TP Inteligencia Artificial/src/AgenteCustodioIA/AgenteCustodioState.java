@@ -400,7 +400,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		}
 		
 		agentState += "\n  Costo camino: " + String.valueOf(costoCamino);
-		
+		/*
 		agentState += "\n  Mapa: " + mapaConocido.toString();
 		
 		agentState += "\n  Nodos congestionados: ";
@@ -419,7 +419,7 @@ public class AgenteCustodioState extends SearchBasedAgentState {
 		agentState += "Sensores: ";
 		for (Sensor sensor : sensores) {
 			agentState += "(" + String.valueOf(sensor.isEstado()) + ", " + String.valueOf(sensor.getPosicion()) + ") - "; 
-		}
+		}*/
 
 		return agentState;
 	}
